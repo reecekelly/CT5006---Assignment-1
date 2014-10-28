@@ -1,4 +1,4 @@
-CT5006---Assign-2
+CT5006---Assignment-1
 =================
 
 CT5006 Mobile Application Development Module - Hybrid App Development
