@@ -1,0 +1,77 @@
+@import prod-sass
+@import variables-sass
+
+//General css		----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+
+*
+	padding : 0
+	margin : 0 auto
+
+.ui-mobile
+	min-width : 320px
+	background-color : nth($BackgroundArrayShadow, 8)
+
+.ui-body
+	+expanding-style(100%, 50px)
+	background-color : nth($BackgroundArray, 4)
+
+.ui-a
+	text-decoration : none
+
+//Header css		----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+.ui-page .ui-header
+	position : fixed
+	+dimensions(100%, $HeaderHeight)
+	background-color : nth($BackgroundArray, 3)
+	+box-shadow-inner($InnerShadowValues, nth($BackgroundArrayShadow, 3))
+
+	& .page-title
+		+dimensions(100%, $HeaderHeight)
+		margin : 0 auto
+	
+		& p
+			font-size : 50px
+			text-align : center
+			line-height : $HeaderHeight
+	
+.header-filler
+	height : $HeaderHeight
+	background-color : nth($BackgroundArray, 3)
+
+//Body css			----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+main.ui-content
+	+expanding-style(100%, 50px)
+		
+@for $i from 1 through length($BackgroundArray)
+	.square-content-container a:nth-child(#{$i}n) .page-button, .strip-content-container a:nth-child(#{$i}n) .page-button
+		background-color : nth($BackgroundArray, $i)
+		background  : url(#{nth($HomeImagesArray, 1)}) no-repeat center center
+		+box-shadow-inner($InnerShadowValues, nth($BackgroundArrayShadow, $i))
+		
+.square-content-container a .page-button
+	float : left
+	width : $HomePageButDi 
+	height : 0
+	padding-bottom : $HomePageButDi
+	
+.strip-content-container a .page-button
+	margin : 0 auto
+	+dimensions(100%, $strip-height)
+	
+	& p
+		font-size : 35px
+		line-height : $strip-height
+	
+#mapDiv
+	+dimensions(100%, 450px)
+	margin : 0 auto
+	background  : url(../images/spiffygif_30x30.gif) no-repeat center center
+	background-color : nth($BackgroundArray, 4)
+
+//Footer			----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
+
+@media screen and (orientation: landscape)
+	$HeaderHeight : 150px
+		
+	.ui-page .ui-header
+		background-color : nth($BackgroundArray, 9)

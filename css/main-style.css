@@ -1,149 +1,188 @@
-/*Colour Variables */
 * {
   padding: 0;
   margin: 0 auto;
 }
 
-html {
+.ui-mobile {
   min-width: 320px;
-  background-color: #205156;
+  background-color: #114457;
 }
 
-body {
-  width: 100%;
-  background-color: #206c6c;
-}
-
-a {
-  text-decoration: none;
-}
-
-#wrapper {
+.ui-body {
   display: block;
   overflow: hidden;
   width: 100%;
   height: 1%;
-  min-height: 80px;
-}
-
-header {
-  position: fixed;
-  width: 100%;
-  height: 80px;
-  -webkit-box-shadow: inset 0px 0px 5px 5px #114457;
-  -moz-box-shadow: inset 0px 0px 5px 5px #114457;
-  -ms-box-shadow: inset 0px 0px 5px 5px #114457;
-  -o-box-shadow: inset 0px 0px 5px 5px #114457;
-  box-shadow: inset 0px 0px 5px 5px #114457;
-  -webkit-box-shadow: 0px 4px 2px -2px white;
-  -moz-box-shadow: 0px 4px 2px -2px white;
-  -ms-box-shadow: 0px 4px 2px -2px white;
-  -o-box-shadow: 0px 4px 2px -2px white;
-  box-shadow: 0px 4px 2px -2px white;
-  background-color: #205156;
-}
-
-#header-filler {
-  height: 80px;
+  min-height: 50px;
   background-color: #206c6c;
 }
 
-main {
-  background-color: black;
+.ui-a {
+  text-decoration: none;
 }
 
-.home-page-button {
+.ui-page .ui-header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: #00abbd;
+  -webkit-box-shadow: inset 2px 2px 30px 15px #03a4b6;
+  -moz-box-shadow: inset 2px 2px 30px 15px #03a4b6;
+  -ms-box-shadow: inset 2px 2px 30px 15px #03a4b6;
+  -o-box-shadow: inset 2px 2px 30px 15px #03a4b6;
+  box-shadow: inset 2px 2px 30px 15px #03a4b6;
+}
+.ui-page .ui-header .page-title {
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+}
+.ui-page .ui-header .page-title p {
+  font-size: 50px;
+  text-align: center;
+  line-height: 80px;
+}
+
+.header-filler {
+  height: 80px;
+  background-color: #00abbd;
+}
+
+main.ui-content {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 1%;
+  min-height: 50px;
+}
+
+.square-content-container a:nth-child(1n) .page-button, .strip-content-container a:nth-child(1n) .page-button {
+  background-color: #f68c28;
+  background: url(../images/Home.gif) no-repeat center center;
+  -webkit-box-shadow: inset 2px 2px 30px 15px #f48229;
+  -moz-box-shadow: inset 2px 2px 30px 15px #f48229;
+  -ms-box-shadow: inset 2px 2px 30px 15px #f48229;
+  -o-box-shadow: inset 2px 2px 30px 15px #f48229;
+  box-shadow: inset 2px 2px 30px 15px #f48229;
+}
+
+.square-content-container a:nth-child(2n) .page-button, .strip-content-container a:nth-child(2n) .page-button {
+  background-color: #ef3a25;
+  background: url(../images/Home.gif) no-repeat center center;
+  -webkit-box-shadow: inset 2px 2px 30px 15px #ff2e15;
+  -moz-box-shadow: inset 2px 2px 30px 15px #ff2e15;
+  -ms-box-shadow: inset 2px 2px 30px 15px #ff2e15;
+  -o-box-shadow: inset 2px 2px 30px 15px #ff2e15;
+  box-shadow: inset 2px 2px 30px 15px #ff2e15;
+}
+
+.square-content-container a:nth-child(3n) .page-button, .strip-content-container a:nth-child(3n) .page-button {
+  background-color: #00abbd;
+  background: url(../images/Home.gif) no-repeat center center;
+  -webkit-box-shadow: inset 2px 2px 30px 15px #03a4b6;
+  -moz-box-shadow: inset 2px 2px 30px 15px #03a4b6;
+  -ms-box-shadow: inset 2px 2px 30px 15px #03a4b6;
+  -o-box-shadow: inset 2px 2px 30px 15px #03a4b6;
+  box-shadow: inset 2px 2px 30px 15px #03a4b6;
+}
+
+.square-content-container a:nth-child(4n) .page-button, .strip-content-container a:nth-child(4n) .page-button {
+  background-color: #206c6c;
+  background: url(../images/Home.gif) no-repeat center center;
+  -webkit-box-shadow: inset 2px 2px 30px 15px #216966;
+  -moz-box-shadow: inset 2px 2px 30px 15px #216966;
+  -ms-box-shadow: inset 2px 2px 30px 15px #216966;
+  -o-box-shadow: inset 2px 2px 30px 15px #216966;
+  box-shadow: inset 2px 2px 30px 15px #216966;
+}
+
+.square-content-container a:nth-child(5n) .page-button, .strip-content-container a:nth-child(5n) .page-button {
+  background-color: #fcac23;
+  background: url(../images/Home.gif) no-repeat center center;
+  -webkit-box-shadow: inset 2px 2px 30px 15px #ffb31d;
+  -moz-box-shadow: inset 2px 2px 30px 15px #ffb31d;
+  -ms-box-shadow: inset 2px 2px 30px 15px #ffb31d;
+  -o-box-shadow: inset 2px 2px 30px 15px #ffb31d;
+  box-shadow: inset 2px 2px 30px 15px #ffb31d;
+}
+
+.square-content-container a:nth-child(6n) .page-button, .strip-content-container a:nth-child(6n) .page-button {
+  background-color: #ab3e97;
+  background: url(../images/Home.gif) no-repeat center center;
+  -webkit-box-shadow: inset 2px 2px 30px 15px #ab339d;
+  -moz-box-shadow: inset 2px 2px 30px 15px #ab339d;
+  -ms-box-shadow: inset 2px 2px 30px 15px #ab339d;
+  -o-box-shadow: inset 2px 2px 30px 15px #ab339d;
+  box-shadow: inset 2px 2px 30px 15px #ab339d;
+}
+
+.square-content-container a:nth-child(7n) .page-button, .strip-content-container a:nth-child(7n) .page-button {
+  background-color: #a8cf42;
+  background: url(../images/Home.gif) no-repeat center center;
+  -webkit-box-shadow: inset 2px 2px 30px 15px #afd740;
+  -moz-box-shadow: inset 2px 2px 30px 15px #afd740;
+  -ms-box-shadow: inset 2px 2px 30px 15px #afd740;
+  -o-box-shadow: inset 2px 2px 30px 15px #afd740;
+  box-shadow: inset 2px 2px 30px 15px #afd740;
+}
+
+.square-content-container a:nth-child(8n) .page-button, .strip-content-container a:nth-child(8n) .page-button {
+  background-color: #205156;
+  background: url(../images/Home.gif) no-repeat center center;
+  -webkit-box-shadow: inset 2px 2px 30px 15px #114457;
+  -moz-box-shadow: inset 2px 2px 30px 15px #114457;
+  -ms-box-shadow: inset 2px 2px 30px 15px #114457;
+  -o-box-shadow: inset 2px 2px 30px 15px #114457;
+  box-shadow: inset 2px 2px 30px 15px #114457;
+}
+
+.square-content-container a:nth-child(9n) .page-button, .strip-content-container a:nth-child(9n) .page-button {
+  background-color: #b2311c;
+  background: url(../images/Home.gif) no-repeat center center;
+  -webkit-box-shadow: inset 2px 2px 30px 15px #ae3216;
+  -moz-box-shadow: inset 2px 2px 30px 15px #ae3216;
+  -ms-box-shadow: inset 2px 2px 30px 15px #ae3216;
+  -o-box-shadow: inset 2px 2px 30px 15px #ae3216;
+  box-shadow: inset 2px 2px 30px 15px #ae3216;
+}
+
+.square-content-container a:nth-child(10n) .page-button, .strip-content-container a:nth-child(10n) .page-button {
+  background-color: #dd2392;
+  background: url(../images/Home.gif) no-repeat center center;
+  -webkit-box-shadow: inset 2px 2px 30px 15px #db0e87;
+  -moz-box-shadow: inset 2px 2px 30px 15px #db0e87;
+  -ms-box-shadow: inset 2px 2px 30px 15px #db0e87;
+  -o-box-shadow: inset 2px 2px 30px 15px #db0e87;
+  box-shadow: inset 2px 2px 30px 15px #db0e87;
+}
+
+.square-content-container a .page-button {
   float: left;
   width: 50%;
   height: 0;
   padding-bottom: 50%;
 }
-.home-page-button:a {
+
+.strip-content-container a .page-button {
+  margin: 0 auto;
   width: 100%;
-  height: 100%;
+  height: 60px;
 }
-.home-page-button:a:p {
-  font-size: 50px;
-  text-align: center;
-  line-height: 50%;
+.strip-content-container a .page-button p {
+  font-size: 35px;
+  line-height: 60px;
 }
-.home-page-button:nth-child(1) {
-  background-color: #f68c28;
-  -webkit-box-shadow: inset 0px 0px 5px 5px #f48229;
-  -moz-box-shadow: inset 0px 0px 5px 5px #f48229;
-  -ms-box-shadow: inset 0px 0px 5px 5px #f48229;
-  -o-box-shadow: inset 0px 0px 5px 5px #f48229;
-  box-shadow: inset 0px 0px 5px 5px #f48229;
-}
-.home-page-button:nth-child(2) {
-  background-color: #ef3a25;
-  -webkit-box-shadow: inset 0px 0px 5px 5px #ff2e15;
-  -moz-box-shadow: inset 0px 0px 5px 5px #ff2e15;
-  -ms-box-shadow: inset 0px 0px 5px 5px #ff2e15;
-  -o-box-shadow: inset 0px 0px 5px 5px #ff2e15;
-  box-shadow: inset 0px 0px 5px 5px #ff2e15;
-}
-.home-page-button:nth-child(3) {
-  background-color: #00abbd;
-  -webkit-box-shadow: inset 0px 0px 5px 5px #03a4b6;
-  -moz-box-shadow: inset 0px 0px 5px 5px #03a4b6;
-  -ms-box-shadow: inset 0px 0px 5px 5px #03a4b6;
-  -o-box-shadow: inset 0px 0px 5px 5px #03a4b6;
-  box-shadow: inset 0px 0px 5px 5px #03a4b6;
-}
-.home-page-button:nth-child(4) {
+
+#mapDiv {
+  width: 100%;
+  height: 450px;
+  margin: 0 auto;
+  background: url(../images/spiffygif_30x30.gif) no-repeat center center;
   background-color: #206c6c;
-  -webkit-box-shadow: inset 0px 0px 5px 5px #216966;
-  -moz-box-shadow: inset 0px 0px 5px 5px #216966;
-  -ms-box-shadow: inset 0px 0px 5px 5px #216966;
-  -o-box-shadow: inset 0px 0px 5px 5px #216966;
-  box-shadow: inset 0px 0px 5px 5px #216966;
 }
-.home-page-button:nth-child(5) {
-  background-color: #fcac23;
-  -webkit-box-shadow: inset 0px 0px 5px 5px #ffb31d;
-  -moz-box-shadow: inset 0px 0px 5px 5px #ffb31d;
-  -ms-box-shadow: inset 0px 0px 5px 5px #ffb31d;
-  -o-box-shadow: inset 0px 0px 5px 5px #ffb31d;
-  box-shadow: inset 0px 0px 5px 5px #ffb31d;
-}
-.home-page-button:nth-child(6) {
-  background-color: #ab3e97;
-  -webkit-box-shadow: inset 0px 0px 5px 5px #ab339d;
-  -moz-box-shadow: inset 0px 0px 5px 5px #ab339d;
-  -ms-box-shadow: inset 0px 0px 5px 5px #ab339d;
-  -o-box-shadow: inset 0px 0px 5px 5px #ab339d;
-  box-shadow: inset 0px 0px 5px 5px #ab339d;
-}
-.home-page-button:nth-child(7) {
-  background-color: #a8cf42;
-  -webkit-box-shadow: inset 0px 0px 5px 5px #afd740;
-  -moz-box-shadow: inset 0px 0px 5px 5px #afd740;
-  -ms-box-shadow: inset 0px 0px 5px 5px #afd740;
-  -o-box-shadow: inset 0px 0px 5px 5px #afd740;
-  box-shadow: inset 0px 0px 5px 5px #afd740;
-}
-.home-page-button:nth-child(8) {
-  background-color: #205156;
-  -webkit-box-shadow: inset 0px 0px 5px 5px #114457;
-  -moz-box-shadow: inset 0px 0px 5px 5px #114457;
-  -ms-box-shadow: inset 0px 0px 5px 5px #114457;
-  -o-box-shadow: inset 0px 0px 5px 5px #114457;
-  box-shadow: inset 0px 0px 5px 5px #114457;
-}
-.home-page-button:nth-child(9) {
-  background-color: #b2311c;
-  -webkit-box-shadow: inset 0px 0px 5px 5px #ae3216;
-  -moz-box-shadow: inset 0px 0px 5px 5px #ae3216;
-  -ms-box-shadow: inset 0px 0px 5px 5px #ae3216;
-  -o-box-shadow: inset 0px 0px 5px 5px #ae3216;
-  box-shadow: inset 0px 0px 5px 5px #ae3216;
-}
-.home-page-button:nth-child(10) {
-  background-color: #dd2392;
-  -webkit-box-shadow: inset 0px 0px 5px 5px #db0e87;
-  -moz-box-shadow: inset 0px 0px 5px 5px #db0e87;
-  -ms-box-shadow: inset 0px 0px 5px 5px #db0e87;
-  -o-box-shadow: inset 0px 0px 5px 5px #db0e87;
-  box-shadow: inset 0px 0px 5px 5px #db0e87;
+
+@media screen and (orientation: landscape) {
+  .ui-page .ui-header {
+    background-color: #b2311c;
+  }
 }
