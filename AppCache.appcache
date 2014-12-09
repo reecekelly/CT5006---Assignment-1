@@ -11,8 +11,10 @@ css/main-style.css
 jQueryMobile/jquery.mobile-1.4.5.css
 
 #js
-js/jquery.mobile-1.4.4.min.js
-js/jquery-1.11.1.min.js
+#js/jquery.mobile-1.4.5.min.js
+#js/jquery-1.11.1.min.js
+http://code.jquery.com/jquery-1.11.1.min.js
+http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js
 
 #Images files
 images/google-maps.gif
@@ -21,7 +23,6 @@ images/spiffygif_30x30.gif
 images/UogLogo-Dark.gif
 
 FALLBACK:
-
 
 NETWORK:
 *
