@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<widget	xmlns		= "http://www.w3.org/ns/widgets"
+		xmlns:gap	= "http://phonegap.com/ns/1.0"
+		id			= "co.uk.reecekelly.universityofgloucestershirecomputing"
+		version		= 1.0.3>
+		
+		<name>University of Gloucestershire Computing</name>
+		<description>An easy to use app for new or existing students studing a computing based course at the Universty of Gloucestershire.</description>
+		<author href="http://reecekelly.comyr.com/">Reece Kelly</author>
+		
+		<feature name="http://api.phonegap.com/1.0/device" />
+		
+		<!--<preference name="permissions" value="none" />-->
+		<preference name="orientation" value="portrait" />
+		<preference name="target-device" value="universal" />
+		<preference name="fullscreen" value="true" />
+		<preference name="auto-hide-splash-screen" value="false" />
+		
+		<platform name="ios">
+			<splash src="images/glostershire-intro.png" width="160" height="160"/>
+		</platform>
+		
+		<gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
+		
+		<icon src="images/glostershire-intro.png" />
+</widget>

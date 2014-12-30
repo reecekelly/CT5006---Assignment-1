@@ -20,8 +20,6 @@
 	+dimensions(100%, $HeaderHeight)
 	background-color : $headercolor
 	+box-shadow-inner($InnerShadowValues, nth($headerbutton, 1))
-	border-bottom : 1px soild #ffffff
-	background : url("../images/UogLogo-Dark.gif") 170px $HeaderHeight no-repeat center center
 
 	& .page-title
 		+dimensions(100%, $HeaderHeight)
@@ -48,13 +46,11 @@
 		background : url("../images/Home.gif") $HeaderHeight*0.5 $HeaderHeight*0.5 no-repeat center center
 	
 .header-filler
-	height : $HeaderHeight
-	+border-radius(0px)
+	+dimensions(100%, $HeaderHeight)
 	background-color : nth($BackgroundArray, 3)
 
 //Body css			----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
-main.ui-content
-	+expanding-style(100%, 50px)
+.ui-page .ui-main
 	border-top : 0px
 
 @for $i from 1 through length($BackgroundArray)
@@ -96,17 +92,24 @@ main.ui-content
 
 form
 	width : 100%
-	
-	& input, textarea
-		display : block
-		width: 90%
-		margin : 0 auto
 
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit
+	border: none
+	
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper
+	text-shadow : none
+	
+.ui-collapsible-set .ui-collapsible-inset
+	background-color : black
+	
+h1 ui-collapsible-heading
+	background-color: black
+	
 //Footer			----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
 .ui-page .ui-footer
 	background-color : nth($headerbutton, 2)
 
-//@media screen and (orientation: landscape)
-		
+@media screen and (orientation: landscape)
+	
 //@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
 	//@import mobile-media

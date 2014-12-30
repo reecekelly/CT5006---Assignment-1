@@ -12,6 +12,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 		<meta name="viewport" content="user-scalable=no, width=device-width" />
 		
+		<link rel="icon" type="image/icon" href="images/glostershire-icon.icon">
+		
 		<!--Css Script Links-->
 		<link rel="stylesheet" href="jQueryMobile/jquery.mobile-1.4.5.css">
 		<link rel="stylesheet" type="text/css" href="css/main-style.css">
@@ -22,31 +24,31 @@
 		
 		<!--Google Map Script-->
 		<script src="http://maps.google.com/maps/api/js?sensor=true"></script>	
-		<script> <!--Google Mapping Script-->
-			if(navigator.geolocation) {
-				
-				function hasPosition(position) {
-					var point = new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+		<script> 
+				if(navigator.geolocation) {
+					
+					function hasPosition(position) {
+						var point = new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+							
+						myOptions = {
+							zoom: 15,
+							center: point,
+							mapTypeId: google.maps.MapTypeId.ROADMAP
+						}, 
 						
-					myOptions = {
-						zoom: 15,
-						center: point,
-						mapTypeId: google.maps.MapTypeId.ROADMAP
-					}, 
+						mapDiv = document.getElementById("mapDiv"),
+						
+						map = new google.maps.Map(mapDiv, myOptions),
+							marker = new google.maps.Marker({
+							position: point,
+							map: map,
+							title: "You are here"
+						});
+					}
 					
-					mapDiv = document.getElementById("mapDiv"),
-					
-					map = new google.maps.Map(mapDiv, myOptions),
-						marker = new google.maps.Marker({
-						position: point,
-						map: map,
-						title: "You are here"
-					});
+					navigator.geolocation.getCurrentPosition(hasPosition);
+					google.maps.event.addDomListener(window, 'load', initialize);
 				}
-				
-				navigator.geolocation.getCurrentPosition(hasPosition);
-				google.maps.event.addDomListener(window, 'load', initialize);
-			}
 		</script>
 	</head>
 	
@@ -71,7 +73,7 @@
 						</div>
 					</a>					
 					
-					<a href="#map-page">
+					<a href="#map-page" id="map-button">
 						<div class="page-button">
 							<p>local map</p>	
 						</div>
@@ -201,8 +203,6 @@
 					<input name="submit" type="submit" value="Submit">
 				</form>				
 			</main>
-		
-			<footer data-role="footer"></footer>
 			
 		</content>
 		
@@ -258,33 +258,144 @@
 				<nav data-role="collapsibleset" class="strip-content-container">
 					
 					<div data-role="collapsible" class="page-button" >
-						<h1>ct4010: computers and sercurity</h1>	
-						<p></p>
+						<h1>CT4001: Information Technology & Data Presentation</h1>	
+						<p>This module introduces the use of software packages in the context of solving 
+						business problems and information needs. It will include coverage of databases 
+						with an emphasis on spreadsheets and data analysis. The module is a foundation 
+						module in Business Information Technology and would be relevant to any student 
+						wishing to acquire some practical IT skills to support business.  An understanding 
+						of basic mathematics including algebraic formulae would be beneficial. </br>
+						</br>
+							CAT Point : 30 </br>
+						</br>
+							001: 25% Coursework: Group work, other: 1000 words or equivalent </br>
+							002: 25% Coursework: Group work, other: 1000 words or equivalent </br>
+							003: 50% Coursework: Individual, portfolio: 2000 words or equivalent </br>
+						</p>
 					</div>
 					
 					<div data-role="collapsible" class="page-button" >
-						<h1>ct4010: computers and sercurity</h1>	
-						<p></p>
+						<h1>CT4005: Games Production</h1>	
+						<p>This module covers the core concepts of computer based game production for 
+						different genres including techniques for building levels, interfaces and interactivity. 
+						In addition project life cycle, game documentation and management skills will be 
+						developed within a team context. The module would be suited to a student in any ICT 
+						field who wishes to obtain an understanding of the development requirements for computer 
+						based game design as well as gaining practical experience of working in teams to produce 
+						a game from a client brief. </br>
+						</br>
+							CAT Point : 30 </br>
+						</br>
+							001: 50% Coursework: Individual, portfolio: 2000 words or equivalent </br>
+							002: 50% Coursework: Group work, other: 2000 words or equivalent </br>
+						</p>
 					</div>
 	
 					<div data-role="collapsible" class="page-button" >
-						<h1>ct4010: computers and sercurity</h1>	
-						<p></p>
+						<h1>CT4007: Systems Analysis And Database Design</h1>	
+						<p>This module introduces systems analysis and database design. Students learn how to 
+						identify business requirements and turn these rapidly into database systems. Students 
+						will be introduced to the requirements of being a Computing Professional. </br>
+						</br>
+							CAT Point : 30 </br>
+						</br>
+							001: 50% Coursework: Individual, portfolio: 2000 words or equivalent </br>
+							002: 50% Coursework: Group work, other: 2000 words or equivalent </br>
+						</p>
 					</div>
 			
 					<div data-role="collapsible" class="page-button" >
-						<h1>ct4010: computers and sercurity</h1>	
-						<p></p>
+						<h1>CT4008: Digital Media Design and Development</h1>	
+						<p>Introduction to the use of design principles, usability guidelines and the incorporation 
+						of ideas from design style movements in the production of digital media. Introduces the 
+						timeline metaphor for multimedia production and authoring for delivery via a variety of 
+						platforms eg: CD-ROM, the Internet, mobile devices etc. This module encourages an exploration 
+						of the design background to the creation of multimedia and develops practical skills in media 
+						editing and authoring tools using both bit-mapped and vector approaches.</br>
+						</br>
+							CAT Point : 30 </br>
+						</br>
+							001: 50% Coursework: Individual, portfolio: 2000 words or equivalent </br>
+							002: 50% Coursework: Group work, other: 2000 words or equivalent </br>
+						</p>
 					</div>
 			
 					<div data-role="collapsible" class="page-button">
-						<h1>ct4005: games production</h1>
-						<p></p>
+						<h1>CT4009: Introduction to Web Development</h1>
+						<p>This module covers the business rationale for using the web as a solution to a business
+						problem, together with the core technologies required to create such solutions. Students 
+						will create structured websites using both scripts (eg: html; CSS; JavaScript) and 
+						industry-standard software. The module would be suited to a student in any computing field 
+						who wishes to obtain an understanding of the Internet, its facilities and technologies and
+						gain experience in production techniques.</br>
+						</br>
+							CAT Point : 30 </br>
+						</br>
+							001: 50% Coursework: Individual, portfolio: 2000 words or equivalent </br>
+							002: 50% Coursework: Group work, other: 2000 words or equivalent </br>
+						</p>
 					</div>
 					
 					<div data-role="collapsible" class="page-button" >
-						<h1>ct4010: computers and sercurity</h1>	
-						<p></p>
+						<h1>CT4010: Computers and Security</h1>	
+						<p>
+							CAT Point : 30 </br>
+						</br>
+							001: 50% Coursework: Individual, portfolio: 2000 words or equivalent </br>
+							002: 50% Coursework: Group work, other: 2000 words or equivalent </br>
+						</p>
+					</div>
+					
+					<div data-role="collapsible" class="page-button" >
+						<h1>CT4011: Creative Skills for Design</h1>
+						<p>Introduction to the design and production of digital forms (artefacts, images, audio & 
+						video) and their use in commercial projects such as games, product design and web design. 
+						Students will develop creative and technical skills using industry standard software as 
+						well as a foundation in traditional art skills.</br>
+						</br>
+							CAT Point : 30 </br>
+						</br>
+							001: 50% Coursework: Individual, portfolio: 2000 words or equivalent </br>
+							002: 50% Coursework: Group work, other: 2000 words or equivalent </br>
+						</p>
+					</div>
+					
+					<div data-role="collapsible" class="page-button" >
+						<h1>CT4012: Introduction to 3D Modelling</h1>	
+						<p>This module introduces the student to techniques for modelling 3D assets using industry 
+						standard software. 3D software will be introduced to enable students to construct artefacts 
+						from existing concept designs for games, products.</br>
+						</br>
+							CAT Point : 30 </br>
+						</br>
+							001: 50% Coursework: Individual, portfolio: 2000 words or equivalent </br>
+							002: 50% Coursework: Group work, other: 2000 words or equivalent </br>
+						</p>
+					</div>
+					
+					<div data-role="collapsible" class="page-button" >
+						<h1>CT4013: Introduction to Physical Computing and Programming</h1>	
+						<p>This module provides opportunity to develop interactive physical systems by the use of 
+						software and hardware. The systems will take input from a variety of sensors and control a 
+						variety of physical outputs such as lights and speakers. Students are assumed to have no 
+						background in programming.</br>
+						</br>
+							CAT Point : 15 </br>
+						</br>
+							001: 100% Coursework: Individual, portfolio: 2000 words or equivalent </br>
+						</p>
+					</div>
+					
+					<div data-role="collapsible" class="page-button" >
+						<h1>CT4017: Introduction to Software Development</h1>	
+						<p>The module introduces the basics of software development. It develops the student's 
+						programming techniques, including the design, development and testing of software units. 
+						Students are assumed to have no background in programming.</br>
+						</br>
+							CAT Point : 15 </br>
+						</br>
+							001: 100% Coursework: Individual, portfolio: 2000 words or equivalent </br>
+						</p>
 					</div>
 					
 				</nav>
@@ -309,34 +420,145 @@
 				<nav data-role="collapsibleset" class="strip-content-container">
 					
 					<div data-role="collapsible" class="page-button" >
-						<h1>ct4010: computers and sercurity</h1>	
-						<p></p>
+						<h1>CT5002: User Support Systems Development</h1>	
+						<p>This module extends the student's knowledge of package software by introducing the 
+						features and facilities that enable easy to use, package-based applications to be built. 
+						Students will gain practical experience of using macro/procedure languages in Office 
+						applications. Students will investigate the benefits and the drawbacks of customising 
+						applications. In addition students will gain an understanding of the integration and 
+						implementation problems of systems development, to analyse training needs of end users 
+						and develop materials associated with that training requirement. They will understand 
+						the concepts of customer support and the role of 'Help Lines' in the implementation phase 
+						of systems development and the principles of software and systems configuration management.</br>
+						</br>
+							CAT Point : 30 </br>
+						</br>
+							001: 40% Coursework: Group work, other: 1600 words or equivalent </br>
+							002: 30% Coursework: Group work, other: 1200 words or equivalent </br>
+							003: 30% Coursework: Group work, other: 1200 words or equivalent </br>
+						</p>
 					</div>
 					
 					<div data-role="collapsible" class="page-button" >
-						<h1>ct4010: computers and sercurity</h1>	
-						<p></p>
+						<h1>CT5004: Computing Technology Placement</h1>	
+						<p>Twelve months work based learning.</br>
+						</br>
+							CAT Point : 120 </br>
+						</br>
+							001: 100% Coursework: Group work, other: 4000 words or equivalent </br>
+						</p>
 					</div>
 	
 					<div data-role="collapsible" class="page-button" >
-						<h1>ct4010: computers and sercurity</h1>	
-						<p></p>
+						<h1>CT5006: Mobile Application Development</h1>	
+						<p>This module seeks to develop and enhance web development and programming skills by 
+						focusing upon issues and techniques specific to the delivery of content and applications 
+						for mobile platforms.</br>
+						</br>
+							CAT Point : 30 </br>
+						</br>
+							0001: 50% Coursework: Individual, standard written: 2000 words or equivalent </br>
+							002: 50% Coursework: Group work, other: 2000 words or equivalent </br>
+						</p>
 					</div>
 			
 					<div data-role="collapsible" class="page-button" >
-						<h1>ct4010: computers and sercurity</h1>	
-						<p></p>
+						<h1>CT5008: 3D Animations for Games</h1>	
+						<p>The module affords the opportunity to further the computer games work undertaken at 
+						level 4 with techniques for designing 3D models and animations as well as evaluating 
+						various industry standard tools. Students will have the opportunity to work in teams 
+						producing a product from a client brief.</br>
+						</br>
+							CAT Point : 30 </br>
+						</br>
+							001: 50% Coursework: Individual, portfolio: 2000 words or equivalent </br>
+							002: 50% Coursework: Group work, other: 2000 words or equivalent </br>
+						</p>
 					</div>
 			
 					<div data-role="collapsible" class="page-button">
-						<h1>ct4005: games production</h1>
-						<p></p>
+						<h1>CT5009: Game Engine Programming</h1>	
+						<p>The module affords the opportunity to further the computer games work undertaken 
+						at level 4 by developing the skills required to design and implement computer games 
+						using a variety of programming development environments.</br>
+						</br>
+							CAT Point : 30 </br>
+						</br>
+							001: 40% Coursework: Individual, standard written: 1600 words or equivalent </br>
+							002: 60% Coursework: Group work, other: 2400 words or equivalent </br>
+						</p>
 					</div>
 					
 					<div data-role="collapsible" class="page-button" >
-						<h1>ct4010: computers and sercurity</h1>	
-						<p></p>
+						<h1>CT5012: User Interaction Studies</h1>	
+						<p>The module involves the design and evaluation of multimedia interfaces designed 
+						for delivery via the web to ensure usability for defined user groups. It includes 
+						empirical evaluation and practical work in the development of novel interface solutions.</br>
+						</br>
+							CAT Point : 30 </br>
+						</br>
+							001: 50% Coursework: Individual, standard written: 2000 word or equivalent </br>
+							002: 50% Coursework: Group work, other: 2000 word or equivalent </br>
+						</p>
 					</div>
+					
+					<div data-role="collapsible" class="page-button" >
+						<h1>CT5014: Mini Enterprise Project</h1>	
+						<p>The module provides an opportunity for students to undertake an individual 
+						enterprise/innovation project during semester 3 as part of study for a fast-track degree. 
+						This project should aim to solve a practical problem or develop a novel idea identified by 
+						the student or tutor. The type of project is flexible, but must be approved by a tutor 
+						before it is undertaken.</br>
+						</br>
+							CAT Point : 30 </br>
+						</br>
+							001: 100% Coursework: Individual, standard written: 4000 words or equivalent </br>
+						</p>
+					</div>
+
+					<div data-role="collapsible" class="page-button" >
+						<h1>CT5015: Supervised Professional Work Experience</h1>	
+						<p>The module affords the opportunity for students to undertake a supervised work-based 
+						activity during the Semester 3 as part of study for a fast-track degree. This activity 
+						can be a period of work in industry, the community, contract work for a commercial client, 
+						volunteer organization or work for the University. A tutor must approve the activity, before 
+						it is undertaken, to ensure it is appropriate to the course of study and the requirements 
+						of the module.</br>
+						</br>
+							CAT Point : 30 </br>
+						</br>
+							001: 100% Coursework: Individual, standard written: 4000 words or equivalent </br>
+						</p>
+					</div>	
+
+					<div data-role="collapsible" class="page-button" >
+						<h1>CT5016: Level Design</h1>	
+						<p>The module affords the opportunity to further the computer games work undertaken at level 4 
+						with techniques for embedding narrative forms within game levels using commercial integrated 
+						development environment software. Students will develop a mixture of technical skills, some 
+						of which will be particular to specific tools sets, and a strong understanding of the theories 
+						and principles of environment design and scripting for developing successful and compelling 
+						game-play experiences.</br>
+						</br>
+							CAT Point : 30 </br>
+						</br>
+							001: 50% Coursework: Individual, standard written: 2000 words or equivalent </br>
+							002: 50% Coursework: Individual, standard written: 2000 words or equivalent </br>
+						</p>
+					</div>	
+
+					<div data-role="collapsible" class="page-button" >
+						<h1>CT5017: Multimedia Web Development</h1>	
+						<p>This module builds on the time based digital media and design techniques from level 4 and develops the scripting 
+						skills needed to provide users with the means to control audio or visual media delivered via the web or other means 
+						on a variety of platforms.</br>
+						</br>
+							CAT Point : 30 </br>
+						</br>
+							001: 50% Coursework: Individual, standard written: 2000 words or equivalent </br>
+							002: 50% Coursework: Individual, standard written: 2000 words or equivalent </br>
+						</p>
+					</div>						
 					
 				</nav>
 				
@@ -361,33 +583,122 @@
 				<nav data-role="collapsibleset" class="strip-content-container">
 					
 					<div data-role="collapsible" class="page-button" >
-						<h1>ct4010: computers and sercurity</h1>	
-						<p></p>
+						<h1>CT6001: Human Computer Interaction</h1>	
+						<p>The principles of human-computer interaction are considered in a variety of application areas which may vary from 
+						year to year. Topical subjects include virtual reality, computer supported collaborative working and video-conferencing. 
+						The module broadens students' critical perspective of current issues in human computer interaction considered from a 
+						various perspectives such as user characterizations, systems evaluation and user-centered issues with developing technologies. </br>
+						</br>
+							CAT Point : 15 </br>
+						</br>
+							001: 100% Coursework: Individual, portfolio: 2000 words or equivalent </br>
+						</p>
 					</div>
 					
 					<div data-role="collapsible" class="page-button" >
-						<h1>ct4010: computers and sercurity</h1>	
-						<p></p>
+						<h1>CT6005: Software Quality Assurance</h1>	
+						<p>The module covers key issues and standard-based methodologies related to the management of software development and explores 
+						strategies central to the assurance of quality within different software development environments.</br>
+						</br>
+							CAT Point : 15 </br>
+						</br>
+							001: 100% Coursework: Individual, portfolio: 2000 words or equivalent </br>
+						</p>
 					</div>
 	
 					<div data-role="collapsible" class="page-button" >
-						<h1>ct4010: computers and sercurity</h1>	
-						<p></p>
+						<h1>CT6002: IT in Society</h1>	
+						<p>This module introduces students to the sociology of technology as a theoretical framework for examining the social aspects 
+						of information and communication technologies.  The aim is to broaden students' critical perspective and to provide students 
+						with a balanced view of current and future developments within ICTs on society, the module also focuses on the implications 
+						associated with developing, implementing and using information and communications technology and information systems within 
+						society. </br>
+						</br>
+							CAT Point : 15 </br>
+						</br>
+							001: 100% Coursework: Individual, standard written: 2000 words or equivalent </br>
+						</p>
 					</div>
 			
 					<div data-role="collapsible" class="page-button" >
-						<h1>ct4010: computers and sercurity</h1>	
-						<p></p>
+						<h1>CT6006: Advanced Concepts in Languages</h1>	
+						<p>This module studies the conceptual framework underlying contemporary programming languages and explores some different 
+						programming paradigms. The module considers the principal programming language concepts through a number of contemporary 
+						procedural and non-procedural programming languages. Support for program design and robustness will be emphasized throughout. </br>
+						</br>
+							CAT Point : 15 </br>
+						</br>
+							001: 100% Coursework: Individual, portfolio: 2000 words or equivalent </br>
+						</p>
 					</div>
 			
-					<div data-role="collapsible" class="page-button">
-						<h1>ct4005: games production</h1>
-						<p></p>
+					<div data-role="collapsible" class="page-button" >
+						<h1>CT6007: Individual Research Project</h1>	
+						<p>subject area of the field. Students self-manage an academic investigation of an appropriate topic with support from an adviser. 
+						The module also introduces research methods and the principles of data summary and presentation. </br>
+						</br>
+							CAT Point : 30 </br>
+						</br>
+							001: 20% Coursework: Individual, standard written: 1000 words or equivalent </br>
+							002: 60% Coursework: Individual, dissertation/project: 6000 words or equivalent </br>
+							003: 20% Coursework: Individual, presentation: 1000 words or equivalent </br>
+						</p>
 					</div>
 					
 					<div data-role="collapsible" class="page-button" >
-						<h1>ct4010: computers and sercurity</h1>	
-						<p></p>
+						<h1>CT6008: Advanced Group Project</h1>	
+						<p>Participate as a member of a multidisciplinary team employed to design, produce, test and document a substantial software product. </br>
+						</br>
+							CAT Point : 30 </br>
+						</br>
+							001: 100% Coursework: Group work, other: 6000 words or equivalent </br>
+						</p>
+					</div>
+					
+					<div data-role="collapsible" class="page-button" >
+						<h1>CT6010: Advanced Concepts in Gaming</h1>	
+						<p>The module affords students the opportunity to explore the theoretical and practical issues facing the games industry by investigating 
+						both technological and ethical concerns. </br>
+						</br>
+							CAT Point : 15 </br>
+						</br>
+							001: 100% Coursework: Individual, portfolio: 2000 words or equivalent </br>
+						</p>
+					</div>
+					
+					<div data-role="collapsible" class="page-button" >
+						<h1>CT6011: Digital 3D Effects</h1>	
+						<p>The module affords the opportunity to further the computer graphics work undertaken at level 4 or 5 by investigating various methods of 
+						integrating 3D models with live action digital video using industry standard visual effects tools and techniques. </br>
+						</br>
+							CAT Point : 15 </br>
+						</br>
+							001: 100% Coursework: Individual, portfolio: 2000 words or equivalent </br>
+						</p>
+					</div>
+					
+					<div data-role="collapsible" class="page-button" >
+						<h1>CT6013: Advanced Database Systems</h1>	
+						<p>The module explores advanced database systems, their management and their corporate role.  At the heart of information systems lie 
+						database management systems, transactional database systems, data warehouses, e-commerce databases and databases for storing complex data.  
+						This module looks at the technologies, data models and policies that such systems require. </br>
+						</br>
+							CAT Point : 30 </br>
+						</br>							
+							001: 40% Coursework: Individual, standard written: 1600 words or equivalent </br>
+							002: 60% Coursework: Individual, other: 2400 words or equivalent </br>
+						</p>
+					</div>
+					
+					<div data-role="collapsible" class="page-button" >
+						<h1>CT6018: Indie Game Development</h1>	
+						<p>This module explores the necessary steps for starting out in the games industry, as an indie developer, freelancer, small business or 
+						as a contract worker.</br>
+						</br>
+							CAT Point : 15 </br>
+						</br>
+							001: 100% Coursework: Individual, portfolio: 2000 words or equivalent </br>
+						</p>
 					</div>
 					
 				</nav>
