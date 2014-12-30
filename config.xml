@@ -16,10 +16,6 @@
 		<preference name="fullscreen" value="true" />
 		<preference name="auto-hide-splash-screen" value="false" />
 		
-		<platform name="ios">
-			<splash src="images/glostershire-intro.png" width="160" height="160"/>
-		</platform>
-		
 		<gap:plugin name="org.apache.cordova.splashscreen" version="0.3.4" />
 		
 		<icon src="images/glostershire-intro.png" />
