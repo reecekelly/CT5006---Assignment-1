@@ -39,5 +39,5 @@
 		
 		<icon src="images/glostershire-intro.png" />
 		
-		<!--<access origin="*"/>-->
+		<access origin="*"/>
 </widget>
