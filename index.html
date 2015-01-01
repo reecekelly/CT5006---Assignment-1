@@ -23,8 +23,10 @@
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 		<!--Google Map Script-->
 		<script src="http://maps.google.com/maps/api/js?sensor=true"></script>	
+		
 		<script> 
 				if(navigator.geolocation) {
 					
@@ -717,5 +719,10 @@
 				<a href="#home-page"></a>
 			</header>		
 		</content>
+	
+		<script>
+		var currentlineheight = $(".square-content-container a .page-button").height();
+		$(".square-content-container a .page-button p").css("line-height", "currentlineheight");
+	</script>
 	</body>
 </html>
