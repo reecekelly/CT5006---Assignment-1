@@ -26,7 +26,7 @@
 		margin : 0 auto
 	
 		& p
-			font-size : 25px
+			font-size : 35px
 			text-align : center
 			line-height : $HeaderHeight
 			
@@ -38,12 +38,9 @@
 	
 		&:hover
 			background-color : nth($headerbutton, 2)
-	
-	& .ui-btn-left
-		//background-color : black
-		
-	& .ui-btn-right
-		background : url("../images/Home.gif") $HeaderHeight*0.5 $HeaderHeight*0.5 no-repeat center center
+			
+		&:last-child
+			background  : url("../images/home.gif") $HeaderHeight*0.5, $HeaderHeight*0.5 no-repeat center center
 	
 .header-filler
 	+dimensions(100%, $HeaderHeight)
@@ -69,11 +66,10 @@
 	padding-bottom : $HomePageButDi
 
 	& p
-		font-size : 25px
-		text-decoration: none
+		text-transform : capitalize
+		font-size : 50px
 		text-align : center
-		vertical-align : middle
-		text-color : #ffffff
+		color : #ffffff
 
 .strip-content-container a .page-button
 	margin : 0 auto
@@ -89,7 +85,7 @@
 	margin : 0 auto
 	background  : url("../images/spiffygif_30x30.gif") no-repeat center center
 	background-color : #ffffff
-
+ 
 form
 	width : 100%
 
@@ -98,18 +94,24 @@ form
 	
 .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper
 	text-shadow : none
+	vertical-align : middle
+	+text-shadow(0px 0px 5px, #000000)
 	
-.ui-collapsible-set .ui-collapsible-inset
-	background-color : black
-	
-h1 ui-collapsible-heading
-	background-color: black
+	&:link 
+		color : #ffffff
+
+	&:visited
+		color : #ffffff
+
+	&:hover
+		color : #ffffff
+
+	&:active
+		color : #ffffff
 	
 //Footer			----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
 .ui-page .ui-footer
 	background-color : nth($headerbutton, 2)
-
-@media screen and (orientation: landscape)
 	
 //@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
 	//@import mobile-media

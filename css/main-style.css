@@ -34,7 +34,7 @@
   margin: 0 auto;
 }
 .ui-page .ui-header .page-title p {
-  font-size: 25px;
+  font-size: 35px;
   text-align: center;
   line-height: 60px;
 }
@@ -52,8 +52,8 @@
 .ui-page .ui-header .ui-btn:hover {
   background-color: #e65a52;
 }
-.ui-page .ui-header .ui-btn-right {
-  background: url("../images/Home.gif") 30px 30px no-repeat center center;
+.ui-page .ui-header .ui-btn:last-child {
+  background: url("../images/home.gif") 30px, 30px no-repeat center center;
 }
 
 .header-filler {
@@ -203,11 +203,10 @@
   padding-bottom: 50%;
 }
 .square-content-container a .page-button p {
-  font-size: 25px;
-  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 50px;
   text-align: center;
-  vertical-align: middle;
-  text-color: white;
+  color: white;
 }
 
 .strip-content-container a .page-button {
@@ -239,14 +238,24 @@ form {
 
 .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
   text-shadow: none;
+  vertical-align: middle;
+  -webkit-text-shadow: 0px 0px 5px black;
+  -moz-text-shadow: 0px 0px 5px black;
+  -ms-text-shadow: 0px 0px 5px black;
+  -o-text-shadow: 0px 0px 5px black;
+  text-shadow: 0px 0px 5px black;
 }
-
-.ui-collapsible-set .ui-collapsible-inset {
-  background-color: black;
+.ui-overlay-a:link, .ui-page-theme-a:link, .ui-page-theme-a .ui-panel-wrapper:link {
+  color: white;
 }
-
-h1 ui-collapsible-heading {
-  background-color: black;
+.ui-overlay-a:visited, .ui-page-theme-a:visited, .ui-page-theme-a .ui-panel-wrapper:visited {
+  color: white;
+}
+.ui-overlay-a:hover, .ui-page-theme-a:hover, .ui-page-theme-a .ui-panel-wrapper:hover {
+  color: white;
+}
+.ui-overlay-a:active, .ui-page-theme-a:active, .ui-page-theme-a .ui-panel-wrapper:active {
+  color: white;
 }
 
 .ui-page .ui-footer {
