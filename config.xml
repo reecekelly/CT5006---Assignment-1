@@ -15,10 +15,11 @@
 		<preference name="orientation" value="portrait" />
 		<preference name="target-device" value="universal" />
 		<preference name="fullscreen" value="true" />
-		<preference name="webviewbounce" value="true" />
-		<preference name="BackgroundColor" value="1xff0000ff" />
+		<preference name="disallowOverscroll" value="true" />
+		<preference name="DisallowOverscroll" value="true" />
 		
 		<gap:plugin name="com.phonegap.plugin.statusbar" version="1.0.1" />
+		<gap:splash src="320x480.png" />
 		
 		<!-- Core plugins 
 		<gap:plugin name="org.apache.cordova.splashscreen" />
