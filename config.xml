@@ -16,6 +16,9 @@
 		<preference name="target-device" value="universal" />
 		<preference name="fullscreen" value="true" />
 		
+		<preference name="disallowOverscroll" value="true" />
+		<preference name="DisallowOverscroll" value="true" />
+		
 		<icon src="images/glostershire-intro.png" />
 		
 		<content src="index.html" />
