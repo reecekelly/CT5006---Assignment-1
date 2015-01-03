@@ -15,8 +15,11 @@
 		<preference name="orientation" value="portrait" />
 		<preference name="target-device" value="universal" />
 		<preference name="fullscreen" value="true" />
-		<preference name="DisallowOverscroll" value="true" />
+		<preference name="webviewbounce" value="true" />
 		<preference name="BackgroundColor" value="1xff0000ff" />
+		
+		<!-- Core plugins 
+		<gap:plugin name="org.apache.cordova.splashscreen" />
 		<preference name="AutoHideSplashScreen" value="false" />
 		<preference name="SplashScreenDelay" value="10000" />
 		
