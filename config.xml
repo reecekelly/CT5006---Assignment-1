@@ -3,7 +3,9 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.reecekelly.universityofgloucestershirecomputing"
-        version   = "1.0.5">
+        version   = "1.0.5"
+		android-versionCode="1"
+		ios-CFBundleVersion="1.0.5">
 		
 		<name>University of Gloucestershire Computing</name>
 		<description>An easy to use app for new or existing students studing a computing based course at the Universty of Gloucestershire.</description>
@@ -15,9 +17,14 @@
 		<preference name="orientation" value="portrait" />
 		<preference name="target-device" value="universal" />
 		<preference name="fullscreen" value="true" />
-		<preference name="auto-hide-splash-screen" value="false" />
+		<preference name="DisallowOverscroll" value="true"/>
+		<preference name="BackgroundColor" value="1xff0000ff"/>
 		
 		<!-- Core plugins -->
+		<gap:plugin name="org.apache.cordova.splashscreen" />
+		<preference name="AutoHideSplashScreen" value="false" />
+		<>
+		<preference name="SplashScreenDelay" value="10000" />
 		<!--<gap:plugin name="org.apache.cordova.battery-status" />
 		<gap:plugin name="org.apache.cordova.camera" />
 		<gap:plugin name="org.apache.cordova.media-capture" />
@@ -34,10 +41,10 @@
 		<gap:plugin name="org.apache.cordova.inappbrowser" />
 		<gap:plugin name="org.apache.cordova.media" />
 		<gap:plugin name="org.apache.cordova.network-information" />
-		<gap:plugin name="org.apache.cordova.splashscreen" />
 		<gap:plugin name="org.apache.cordova.vibration" />-->
 		
 		<icon src="images/glostershire-intro.png" />
 		
+		<content src="index.html" />
 		<access origin="*"/>
 </widget>
