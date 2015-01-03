@@ -3,9 +3,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.reecekelly.universityofgloucestershirecomputing"
-        version   = "1.0.5"
-		android-versionCode="1"
-		ios-CFBundleVersion="1.0.5">
+        version   = "1.0.5">
 		
 		<name>University of Gloucestershire Computing</name>
 		<description>An easy to use app for new or existing students studing a computing based course at the Universty of Gloucestershire.</description>
@@ -23,7 +21,6 @@
 		<!-- Core plugins -->
 		<gap:plugin name="org.apache.cordova.splashscreen" />
 		<preference name="AutoHideSplashScreen" value="false" />
-		<>
 		<preference name="SplashScreenDelay" value="10000" />
 		<!--<gap:plugin name="org.apache.cordova.battery-status" />
 		<gap:plugin name="org.apache.cordova.camera" />
