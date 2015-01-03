@@ -17,6 +17,10 @@
 		<preference name="fullscreen" value="true" />
 		<preference name="webviewbounce" value="true" />
 		<preference name="BackgroundColor" value="1xff0000ff" />
+		<preference name="prerendered-icon" value="true" />
+		
+		<gap:plugin name="com.phonegap.plugin.statusbar" version="1.0.1" />
+		<gap:plugin name="org.apache.cordova.splashscreen" />
 		
 		<!-- Core plugins 
 		<gap:plugin name="org.apache.cordova.splashscreen" />
