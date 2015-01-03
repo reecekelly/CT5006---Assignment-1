@@ -19,6 +19,8 @@
 		<preference name="disallowOverscroll" value="true" />
 		<preference name="DisallowOverscroll" value="true" />
 		
+		<gap:plugin name="com.phonegap.plugin.statusbar" version="1.0.1" />
+		
 		<icon src="images/glostershire-intro.png" />
 		
 		<content src="index.html" />
