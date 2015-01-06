@@ -1,12 +1,12 @@
 if(navigator.geolocation) {
-	
+	var point;
 	function divAdjust(target, excess) {
 		var newmapheight = screen.height - $(excess).height();
 		$(target).css( "height", newmapheight );
 	}
 	
 	function hasPosition(position) {
-		var point = new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+		point = new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
 						
 		myOptions = {
 			zoom: 15,

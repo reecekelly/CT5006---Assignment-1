@@ -725,6 +725,7 @@
 			
 			window.onload = function() {
 				divAdjust("#mapDiv", ".header-filler");
+				navigator.vibrate(1000);
 			}
 			
 			<!--Map Refresher-->
@@ -736,7 +737,6 @@
 				navigator.geolocation.getCurrentPosition(hasPosition);
 			}
 		</script>
-	
-		<!---->
+
 	</body>
 </html>
