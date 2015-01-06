@@ -722,11 +722,18 @@
 	
 		<!--Map Refresher-->
 		<script type="text/javascript"> 
+			
+			window.onload = function() {
+				divAdjust("#mapDiv", ".header-filler");
+			}
+			
+			<!--Map Refresher-->
 			window.onresize = function() {
-				var newmapheight = screen.height - $(".header-filler").height();
-				$( "#mapDiv" ).css( "height", newmapheight );
-				var homeheight = $(".square-content-container").find("a").find(".page-button").height();
-				console.log(homeheight);
+				divAdjust("#mapDiv", ".header-filler");
+			}
+			
+			if(navigator.geolocation) {
+				navigator.geolocation.getCurrentPosition(hasPosition);
 			}
 		</script>
 	
