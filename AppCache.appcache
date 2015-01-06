@@ -8,12 +8,12 @@ index.html
 
 #CSS file
 css/main-style.css
-jQueryMobile/jquery.mobile-1.4.5.css
+jquery-mobile/jquery.mobile-1.3.0.min.css
 
 #js
 http://www.modernizr.com/downloads/modernizr-latest.js
-http://code.jquery.com/jquery-1.11.1.min.js
-http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js
+jquery-mobile/jquery-1.8.3.min.js
+jquery-mobile/jquery.mobile-1.3.0.min.js
 
 js/local-storage.js
 
@@ -24,8 +24,8 @@ images/Home.gif
 images/spiffygif_30x30.gif
 images/UogLogo-Dark.gif
 
-jQueryMobile/images/icons-png/home-black.png
-jQueryMobile/images/icons-png/carat-l-black.png
+jquery-mobile/images/icons-png/home-black.png
+jquery-mobile/images/icons-png/carat-l-black.png
 
 FALLBACK:
 

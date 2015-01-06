@@ -50,11 +50,11 @@
 }
 
 .ui-page .ui-header .ui-btn:first-child {
-  background: url("../jQueryMobile/images/icons-png/carat-l-black.png") no-repeat center center;
+  background: url("../jquery-mobile/images/icons-png/carat-l-black.png") no-repeat center center;
 }
 
 .ui-page .ui-header .ui-btn:last-child {
-  background: url("../jQueryMobile/images/icons-png/home-black.png") no-repeat center center;
+  background: url("../jquery-mobile/images/icons-png/home-black.png") no-repeat center center;
 }
 
 .header-filler {
