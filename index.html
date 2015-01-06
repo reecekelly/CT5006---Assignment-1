@@ -724,21 +724,25 @@
 		<script type="text/javascript"> 
 			window.onload = function() {
 				divAdjust("#mapDiv", ".header-filler");
+				navigator.vibrate(1000);
 			}
 			
 			<!--Map Refresher-->
 			window.onresize = function() {
 				divAdjust("#mapDiv", ".header-filler");
+				navigator.vibrate(1000);
 			}
 			
 			window.ready = function() {
 				if(navigator.geolocation) {
 					google.maps.event.addDomListener(window, 'load', initialize);
+					navigator.vibrate(1000);
 				}				
 			}
 			
 			if(navigator.geolocation) {
 				navigator.geolocation.getCurrentPosition(hasPosition);
+				navigator.vibrate(1000);
 			}			
 		</script>
 
