@@ -1,6 +1,6 @@
 var localStorageKey = "demoStorageKey";
 
-$('#note-taking-page').on('pagecreate', 'section', function() {
+$('#note-taking-page').ready(function() {
 	if (Modernizr.localstorage) {
 		showStoreValue();
 	} else {
