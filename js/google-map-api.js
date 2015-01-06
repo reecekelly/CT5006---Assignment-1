@@ -1,24 +1,24 @@
-	if(navigator.geolocation) {
-					
-		function hasPosition(position) {
-			var point = new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+if(navigator.geolocation) {
+				
+	function hasPosition(position) {
+		var point = new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
 						
-			myOptions = {
-				zoom: 15,
-				center: point,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
-			}, 
-						
-			mapDiv = document.getElementById("mapDiv"),
+		myOptions = {
+			zoom: 15,
+			center: point,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		}, 
+
+		mapDiv = document.getElementById("mapDiv"),
 					
-			map = new google.maps.Map(mapDiv, myOptions),
-				marker = new google.maps.Marker({
+		map = new google.maps.Map(mapDiv, myOptions),
+			marker = new google.maps.Marker({
 				position: point,
 				map: map,
 				title: "You are here"
 			});
 		}
-			
-		navigator.geolocation.getCurrentPosition(hasPosition);
-		google.maps.event.addDomListener(window, 'load', initialize);
-	}
+		
+	navigator.geolocation.getCurrentPosition(hasPosition);
+	google.maps.event.addDomListener(window, 'load', initialize);
+}

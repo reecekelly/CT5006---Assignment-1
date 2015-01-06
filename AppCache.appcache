@@ -11,10 +11,11 @@ css/main-style.css
 jQueryMobile/jquery.mobile-1.4.5.css
 
 #js
-#js/jquery.mobile-1.4.5.min.js
-#js/jquery-1.11.1.min.js
+http://www.modernizr.com/downloads/modernizr-latest.js
 http://code.jquery.com/jquery-1.11.1.min.js
 http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js
+
+js/local-storage.js
 
 #Images files
 images/glostershire-icon.icon
@@ -22,6 +23,9 @@ images/google-maps.gif
 images/Home.gif
 images/spiffygif_30x30.gif
 images/UogLogo-Dark.gif
+
+jQueryMobile/images/icons-png/home-black.png
+jQueryMobile/images/icons-png/carat-l-black.png
 
 FALLBACK:
 

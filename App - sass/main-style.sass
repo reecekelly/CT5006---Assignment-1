@@ -18,40 +18,40 @@
 .ui-page .ui-header
 	position : fixed
 	+dimensions(100%, $HeaderHeight)
-	background-color : $headercolor
 	+box-shadow-inner($InnerShadowValues, nth($headerbutton, 1))
+	background  : $headercolor url("../images/UogLogo-Dark.gif") no-repeat center center
 
 	& .page-title
 		+dimensions(100%, $HeaderHeight)
 		margin : 0 auto
-	
-		& p
-			font-size : 35px
-			text-align : center
-			line-height : $HeaderHeight
 			
 	& .ui-btn
-		+dimensions($HeaderHeight*0.5, $HeaderHeight*0.5)
+		+dimensions(($HeaderHeight*0.5), ($HeaderHeight*0.45))
 		+border-radius(0px)
+		display: inline-flex
 		border-color : $bordercolor
 		background-color : nth($headerbutton, 1)
 	
 		&:hover
 			background-color : nth($headerbutton, 2)
-			
-		&:last-child
-			background  : url("../images/home.gif") $HeaderHeight*0.5, $HeaderHeight*0.5 no-repeat center center
+	
+.ui-page .ui-header .ui-btn:first-child
+	background  : url("../jQueryMobile/images/icons-png/carat-l-black.png") no-repeat center center
+	
+.ui-page .ui-header .ui-btn:last-child	
+	background  : url("../jQueryMobile/images/icons-png/home-black.png") no-repeat center center
 	
 .header-filler
 	+dimensions(100%, $HeaderHeight)
-	background-color : nth($BackgroundArray, 3)
-
+	visibility: hidden
+	
 //Body css			----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
 .ui-page .ui-main
 	border-top : 0px
 
 @for $i from 1 through length($BackgroundArray)
 	.square-content-container a:nth-child(#{$i}n) .page-button, .strip-content-container a:nth-child(#{$i}n) .page-button
+		content : "Joe's Task"
 		background  : nth($BackgroundArray, $i) url(#{nth($HomeImagesArray, $i)}) no-repeat center center
 		background-size : 150px 150px
 		+box-shadow-inner($InnerShadowValues, nth($BackgroundArrayShadow, $i))
@@ -61,16 +61,16 @@
 
 .square-content-container a .page-button
 	float : left
-	width : $HomePageButDi
+	width : 50%
 	height : 0
-	padding-bottom : $HomePageButDi
+	padding-bottom : 50%
 
 	& p
 		text-transform : capitalize
-		font-size : 50px
+		font-size : 25px
 		text-align : center
 		color : #ffffff
-
+			
 .strip-content-container a .page-button
 	margin : 0 auto
 	+dimensions(100%, $strip-height)
@@ -81,15 +81,22 @@
 		line-height : $strip-height
 
 #mapDiv
-	+dimensions(100%, 350px)
+	+dimensions(100%, 0px)
 	margin : 0 auto
 	background  : url("../images/spiffygif_30x30.gif") no-repeat center center
 	background-color : #ffffff
  
-form
+form input
+	margin : 0 auto
 	width : 100%
+	
+.ui-corner-all
+	+border-radius(0px)
 
-.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, 
+html .ui-bar-a .ui-bar-inherit, 
+html .ui-body-a .ui-bar-inherit, 
+html body .ui-group-theme-a .ui-bar-inherit
 	border: none
 	
 .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper
@@ -97,20 +104,53 @@ form
 	vertical-align : middle
 	+text-shadow(0px 0px 5px, #000000)
 	
-	&:link 
+	&:link, &:visited, &:hover, &:active
 		color : #ffffff
 
-	&:visited
-		color : #ffffff
+// Change icon background color
+.ui-btn-icon-left:after,
+.ui-btn-icon-right:after,
+.ui-btn-icon-top:after,
+.ui-btn-icon-bottom:after,
+.ui-btn-icon-notext:after 
+	background-color : nth($headerbutton, 1)
 
-	&:hover
-		color : #ffffff
+// Remove curved edge to the expandable tabs	
+.ui-collapsible-heading, 
+.ui-collapsible-heading > .ui-btn
+	+border-radius(0px)
 
-	&:active
-		color : #ffffff
+// remove margin to collection of expanderable tabs	
+.ui-collapsible-inset,
+.ui-collapsible-set
+	margin : 0 auto
+
+// removes the displayed scrollbar	
+::-webkit-scrollbar, 
+	display : none
+	
+//Notetaking			----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----	
+#message
+	display : none
+	border-radius : 10px
+	padding : 10px
+	background-color : #ff0000
+	color : #fff
+
+#storageDemoPage h2
+	white-space : normal
+	
+.ui-content
+	padding : 0px
+	margin : 0 auto
+
+.ui-content .ui-listview-inset, .ui-panel-inner > .ui-listview-inset
+	margin : 0 auto
 	
 //Footer			----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
 .ui-page .ui-footer
+	position : fixed
+	+dimensions(100%, $HeaderHeight)
 	background-color : nth($headerbutton, 2)
 	
 //@media only screen and (min-device-width : 320px) and (max-device-width : 480px)

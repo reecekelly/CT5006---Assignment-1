@@ -20,6 +20,8 @@
 		<preference name="DisallowOverscroll" value="true" />
 		
 		<gap:plugin name="com.phonegap.plugin.statusbar" version="1.0.1" />
+		<gap:plugin name="InAppBrowser" value="org.apache.cordova.core.InAppBrowser" />
+		<gap:splash src="splash.png" />
 		
 		<icon src="images/glostershire-intro.png" />
 		

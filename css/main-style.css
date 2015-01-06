@@ -20,46 +20,47 @@
 .ui-page .ui-header {
   position: fixed;
   width: 100%;
-  height: 60px;
-  background-color: #00acbd;
+  height: 50px;
   -webkit-box-shadow: inset 2px 2px 30px 10px #0e8a98;
   -moz-box-shadow: inset 2px 2px 30px 10px #0e8a98;
   -ms-box-shadow: inset 2px 2px 30px 10px #0e8a98;
   -o-box-shadow: inset 2px 2px 30px 10px #0e8a98;
   box-shadow: inset 2px 2px 30px 10px #0e8a98;
+  background: #00acbd url("../images/UogLogo-Dark.gif") no-repeat center center;
 }
 .ui-page .ui-header .page-title {
   width: 100%;
-  height: 60px;
+  height: 50px;
   margin: 0 auto;
 }
-.ui-page .ui-header .page-title p {
-  font-size: 35px;
-  text-align: center;
-  line-height: 60px;
-}
 .ui-page .ui-header .ui-btn {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 22.5px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
   -o-border-radius: 0px;
   border-radius: 0px;
+  display: inline-flex;
   border-color: #00254a;
   background-color: #0e8a98;
 }
 .ui-page .ui-header .ui-btn:hover {
   background-color: #e65a52;
 }
+
+.ui-page .ui-header .ui-btn:first-child {
+  background: url("../jQueryMobile/images/icons-png/carat-l-black.png") no-repeat center center;
+}
+
 .ui-page .ui-header .ui-btn:last-child {
-  background: url("../images/home.gif") 30px, 30px no-repeat center center;
+  background: url("../jQueryMobile/images/icons-png/home-black.png") no-repeat center center;
 }
 
 .header-filler {
   width: 100%;
-  height: 60px;
-  background-color: #00abbd;
+  height: 50px;
+  visibility: hidden;
 }
 
 .ui-page .ui-main {
@@ -67,6 +68,7 @@
 }
 
 .square-content-container a:nth-child(1n) .page-button, .strip-content-container a:nth-child(1n) .page-button {
+  content: "Joe's Task";
   background: #f68c28 url(../images/Home.gif) no-repeat center center;
   background-size: 150px 150px;
   -webkit-box-shadow: inset 2px 2px 30px 10px #f48229;
@@ -80,6 +82,7 @@
 }
 
 .square-content-container a:nth-child(2n) .page-button, .strip-content-container a:nth-child(2n) .page-button {
+  content: "Joe's Task";
   background: #ef3a25 url(../images/google-maps.gif) no-repeat center center;
   background-size: 150px 150px;
   -webkit-box-shadow: inset 2px 2px 30px 10px #ff2e15;
@@ -93,6 +96,7 @@
 }
 
 .square-content-container a:nth-child(3n) .page-button, .strip-content-container a:nth-child(3n) .page-button {
+  content: "Joe's Task";
   background: #00abbd url(../images/Home.gif) no-repeat center center;
   background-size: 150px 150px;
   -webkit-box-shadow: inset 2px 2px 30px 10px #03a4b6;
@@ -106,6 +110,7 @@
 }
 
 .square-content-container a:nth-child(4n) .page-button, .strip-content-container a:nth-child(4n) .page-button {
+  content: "Joe's Task";
   background: #206c6c url(../images/google-maps.gif) no-repeat center center;
   background-size: 150px 150px;
   -webkit-box-shadow: inset 2px 2px 30px 10px #216966;
@@ -119,6 +124,7 @@
 }
 
 .square-content-container a:nth-child(5n) .page-button, .strip-content-container a:nth-child(5n) .page-button {
+  content: "Joe's Task";
   background: #fcac23 url(../images/Home.gif) no-repeat center center;
   background-size: 150px 150px;
   -webkit-box-shadow: inset 2px 2px 30px 10px #ffb31d;
@@ -132,6 +138,7 @@
 }
 
 .square-content-container a:nth-child(6n) .page-button, .strip-content-container a:nth-child(6n) .page-button {
+  content: "Joe's Task";
   background: #ab3e97 url(../images/google-maps.gif) no-repeat center center;
   background-size: 150px 150px;
   -webkit-box-shadow: inset 2px 2px 30px 10px #ab339d;
@@ -145,6 +152,7 @@
 }
 
 .square-content-container a:nth-child(7n) .page-button, .strip-content-container a:nth-child(7n) .page-button {
+  content: "Joe's Task";
   background: #a8cf42 url(../images/Home.gif) no-repeat center center;
   background-size: 150px 150px;
   -webkit-box-shadow: inset 2px 2px 30px 10px #afd740;
@@ -158,6 +166,7 @@
 }
 
 .square-content-container a:nth-child(8n) .page-button, .strip-content-container a:nth-child(8n) .page-button {
+  content: "Joe's Task";
   background: #205156 url(../images/google-maps.gif) no-repeat center center;
   background-size: 150px 150px;
   -webkit-box-shadow: inset 2px 2px 30px 10px #114457;
@@ -171,6 +180,7 @@
 }
 
 .square-content-container a:nth-child(9n) .page-button, .strip-content-container a:nth-child(9n) .page-button {
+  content: "Joe's Task";
   background: #b2311c url(../images/Home.gif) no-repeat center center;
   background-size: 150px 150px;
   -webkit-box-shadow: inset 2px 2px 30px 10px #ae3216;
@@ -184,6 +194,7 @@
 }
 
 .square-content-container a:nth-child(10n) .page-button, .strip-content-container a:nth-child(10n) .page-button {
+  content: "Joe's Task";
   background: #dd2392 url(../images/google-maps.gif) no-repeat center center;
   background-size: 150px 150px;
   -webkit-box-shadow: inset 2px 2px 30px 10px #db0e87;
@@ -204,7 +215,7 @@
 }
 .square-content-container a .page-button p {
   text-transform: capitalize;
-  font-size: 50px;
+  font-size: 25px;
   text-align: center;
   color: white;
 }
@@ -222,17 +233,29 @@
 
 #mapDiv {
   width: 100%;
-  height: 350px;
+  height: 0px;
   margin: 0 auto;
   background: url("../images/spiffygif_30x30.gif") no-repeat center center;
   background-color: white;
 }
 
-form {
+form input {
+  margin: 0 auto;
   width: 100%;
 }
 
-.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit {
+.ui-corner-all {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit,
+html .ui-bar-a .ui-bar-inherit,
+html .ui-body-a .ui-bar-inherit,
+html body .ui-group-theme-a .ui-bar-inherit {
   border: none;
 }
 
@@ -245,19 +268,60 @@ form {
   -o-text-shadow: 0px 0px 5px black;
   text-shadow: 0px 0px 5px black;
 }
-.ui-overlay-a:link, .ui-page-theme-a:link, .ui-page-theme-a .ui-panel-wrapper:link {
-  color: white;
-}
-.ui-overlay-a:visited, .ui-page-theme-a:visited, .ui-page-theme-a .ui-panel-wrapper:visited {
-  color: white;
-}
-.ui-overlay-a:hover, .ui-page-theme-a:hover, .ui-page-theme-a .ui-panel-wrapper:hover {
-  color: white;
-}
-.ui-overlay-a:active, .ui-page-theme-a:active, .ui-page-theme-a .ui-panel-wrapper:active {
+.ui-overlay-a:link, .ui-overlay-a:visited, .ui-overlay-a:hover, .ui-overlay-a:active, .ui-page-theme-a:link, .ui-page-theme-a:visited, .ui-page-theme-a:hover, .ui-page-theme-a:active, .ui-page-theme-a .ui-panel-wrapper:link, .ui-page-theme-a .ui-panel-wrapper:visited, .ui-page-theme-a .ui-panel-wrapper:hover, .ui-page-theme-a .ui-panel-wrapper:active {
   color: white;
 }
 
+.ui-btn-icon-left:after,
+.ui-btn-icon-right:after,
+.ui-btn-icon-top:after,
+.ui-btn-icon-bottom:after,
+.ui-btn-icon-notext:after {
+  background-color: #0e8a98;
+}
+
+.ui-collapsible-heading,
+.ui-collapsible-heading > .ui-btn {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.ui-collapsible-inset,
+.ui-collapsible-set {
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#message {
+  display: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+}
+
+#storageDemoPage h2 {
+  white-space: normal;
+}
+
+.ui-content {
+  padding: 0px;
+  margin: 0 auto;
+}
+
+.ui-content .ui-listview-inset, .ui-panel-inner > .ui-listview-inset {
+  margin: 0 auto;
+}
+
 .ui-page .ui-footer {
+  position: fixed;
+  width: 100%;
+  height: 50px;
   background-color: #e65a52;
 }
