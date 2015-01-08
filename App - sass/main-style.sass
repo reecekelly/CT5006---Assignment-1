@@ -25,21 +25,22 @@
 		+dimensions(100%, $HeaderHeight)
 		margin : 0 auto
 			
-	& .ui-btn
-		+dimensions(($HeaderHeight*0.5), ($HeaderHeight*0.45))
-		+border-radius(0px)
-		display: inline-flex
-		border-color : $bordercolor
-		background-color : nth($headerbutton, 1)
+.ui-page .ui-header .ui-btn
+	width: 50px
+	height: 50px
+			
+.ui-page .ui-header .ui-btn
+	+dimensions($HeaderHeight*0.8, $HeaderHeight*0.8)
+	+border-radius(0px)
+	display: inline-flex
+	border-color : $bordercolor
+	background-color : nth($headerbutton, 1)
 	
-		&:hover
-			background-color : nth($headerbutton, 2)
-	
-.ui-page .ui-header .ui-btn:first-child
-	background  : url("../jquery-mobile/images/icons-png/carat-l-black.png") no-repeat center center
-	
-.ui-page .ui-header .ui-btn:last-child	
-	background  : url("../jquery-mobile/images/icons-png/home-black.png") no-repeat center center
+	&:first-child
+		background  : nth($headerbutton, 1) url("../images/icons/carat-l-black.png") no-repeat center center
+
+	&:last-child	
+		background  : nth($headerbutton, 1) url("../images/icons/home-black.png") no-repeat center center
 	
 .header-filler
 	+dimensions(100%, $HeaderHeight)
@@ -50,14 +51,16 @@
 	border-top : 0px
 
 @for $i from 1 through length($BackgroundArray)
-	.square-content-container a:nth-child(#{$i}n) .page-button, .strip-content-container a:nth-child(#{$i}n) .page-button
-		content : "Joe's Task"
+	.square-content-container a:nth-child(#{$i}n) .page-button
 		background  : nth($BackgroundArray, $i) url(#{nth($HomeImagesArray, $i)}) no-repeat center center
-		background-size : 150px 150px
+		background-size : 25px 25px
 		+box-shadow-inner($InnerShadowValues, nth($BackgroundArrayShadow, $i))
 
 		&:hover
 			background-color : nth($BackgroundArrayShadow, $i)
+			
+		&:p
+			text-shadow: #000 rgba(#000, 1)
 
 .square-content-container a .page-button
 	float : left
@@ -108,13 +111,13 @@ html body .ui-group-theme-a .ui-bar-inherit
 		color : #ffffff
 
 // Change icon background color
-.ui-btn-icon-left:after,
-.ui-btn-icon-right:after,
-.ui-btn-icon-top:after,
-.ui-btn-icon-bottom:after,
-.ui-btn-icon-notext:after 
+.ui-icon, .ui-icon-searchfield:after
 	background-color : nth($headerbutton, 1)
 
+// Note border edge
+.ui-btn-corner-all
+	border-radius : 0px
+	
 // Remove curved edge to the expandable tabs	
 .ui-collapsible-heading, 
 .ui-collapsible-heading > .ui-btn

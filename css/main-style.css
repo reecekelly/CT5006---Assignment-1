@@ -14,7 +14,7 @@
   width: 100%;
   height: 1%;
   min-height: 50px;
-  background-color: #206c6c;
+  background-color: #fcac23;
 }
 
 .ui-page .ui-header {
@@ -33,9 +33,15 @@
   height: 50px;
   margin: 0 auto;
 }
+
 .ui-page .ui-header .ui-btn {
-  width: 25px;
-  height: 22.5px;
+  width: 50px;
+  height: 50px;
+}
+
+.ui-page .ui-header .ui-btn {
+  width: 40px;
+  height: 40px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
@@ -45,16 +51,11 @@
   border-color: #00254a;
   background-color: #0e8a98;
 }
-.ui-page .ui-header .ui-btn:hover {
-  background-color: #e65a52;
-}
-
 .ui-page .ui-header .ui-btn:first-child {
-  background: url("../jquery-mobile/images/icons-png/carat-l-black.png") no-repeat center center;
+  background: #0e8a98 url("../images/icons/carat-l-black.png") no-repeat center center;
 }
-
 .ui-page .ui-header .ui-btn:last-child {
-  background: url("../jquery-mobile/images/icons-png/home-black.png") no-repeat center center;
+  background: #0e8a98 url("../images/icons/home-black.png") no-repeat center center;
 }
 
 .header-filler {
@@ -67,144 +68,100 @@
   border-top: 0px;
 }
 
-.square-content-container a:nth-child(1n) .page-button, .strip-content-container a:nth-child(1n) .page-button {
-  content: "Joe's Task";
-  background: #f68c28 url(../images/Home.gif) no-repeat center center;
-  background-size: 150px 150px;
+.square-content-container a:nth-child(1n) .page-button {
+  background: #f68c28 url(../images/icons/bullets-black.png) no-repeat center center;
+  background-size: 25px 25px;
   -webkit-box-shadow: inset 2px 2px 30px 10px #f48229;
   -moz-box-shadow: inset 2px 2px 30px 10px #f48229;
   -ms-box-shadow: inset 2px 2px 30px 10px #f48229;
   -o-box-shadow: inset 2px 2px 30px 10px #f48229;
   box-shadow: inset 2px 2px 30px 10px #f48229;
 }
-.square-content-container a:nth-child(1n) .page-button:hover, .strip-content-container a:nth-child(1n) .page-button:hover {
+.square-content-container a:nth-child(1n) .page-button:hover {
   background-color: #f48229;
 }
+.square-content-container a:nth-child(1n) .page-button:p {
+  text-shadow: black black;
+}
 
-.square-content-container a:nth-child(2n) .page-button, .strip-content-container a:nth-child(2n) .page-button {
-  content: "Joe's Task";
-  background: #ef3a25 url(../images/google-maps.gif) no-repeat center center;
-  background-size: 150px 150px;
+.square-content-container a:nth-child(2n) .page-button {
+  background: #ef3a25 url(../images/icons/location-black.png) no-repeat center center;
+  background-size: 25px 25px;
   -webkit-box-shadow: inset 2px 2px 30px 10px #ff2e15;
   -moz-box-shadow: inset 2px 2px 30px 10px #ff2e15;
   -ms-box-shadow: inset 2px 2px 30px 10px #ff2e15;
   -o-box-shadow: inset 2px 2px 30px 10px #ff2e15;
   box-shadow: inset 2px 2px 30px 10px #ff2e15;
 }
-.square-content-container a:nth-child(2n) .page-button:hover, .strip-content-container a:nth-child(2n) .page-button:hover {
+.square-content-container a:nth-child(2n) .page-button:hover {
   background-color: #ff2e15;
 }
+.square-content-container a:nth-child(2n) .page-button:p {
+  text-shadow: black black;
+}
 
-.square-content-container a:nth-child(3n) .page-button, .strip-content-container a:nth-child(3n) .page-button {
-  content: "Joe's Task";
-  background: #00abbd url(../images/Home.gif) no-repeat center center;
-  background-size: 150px 150px;
+.square-content-container a:nth-child(3n) .page-button {
+  background: #00abbd url(../images/icons/edit-black.png) no-repeat center center;
+  background-size: 25px 25px;
   -webkit-box-shadow: inset 2px 2px 30px 10px #03a4b6;
   -moz-box-shadow: inset 2px 2px 30px 10px #03a4b6;
   -ms-box-shadow: inset 2px 2px 30px 10px #03a4b6;
   -o-box-shadow: inset 2px 2px 30px 10px #03a4b6;
   box-shadow: inset 2px 2px 30px 10px #03a4b6;
 }
-.square-content-container a:nth-child(3n) .page-button:hover, .strip-content-container a:nth-child(3n) .page-button:hover {
+.square-content-container a:nth-child(3n) .page-button:hover {
   background-color: #03a4b6;
 }
-
-.square-content-container a:nth-child(4n) .page-button, .strip-content-container a:nth-child(4n) .page-button {
-  content: "Joe's Task";
-  background: #206c6c url(../images/google-maps.gif) no-repeat center center;
-  background-size: 150px 150px;
-  -webkit-box-shadow: inset 2px 2px 30px 10px #216966;
-  -moz-box-shadow: inset 2px 2px 30px 10px #216966;
-  -ms-box-shadow: inset 2px 2px 30px 10px #216966;
-  -o-box-shadow: inset 2px 2px 30px 10px #216966;
-  box-shadow: inset 2px 2px 30px 10px #216966;
-}
-.square-content-container a:nth-child(4n) .page-button:hover, .strip-content-container a:nth-child(4n) .page-button:hover {
-  background-color: #216966;
+.square-content-container a:nth-child(3n) .page-button:p {
+  text-shadow: black black;
 }
 
-.square-content-container a:nth-child(5n) .page-button, .strip-content-container a:nth-child(5n) .page-button {
-  content: "Joe's Task";
-  background: #fcac23 url(../images/Home.gif) no-repeat center center;
-  background-size: 150px 150px;
+.square-content-container a:nth-child(4n) .page-button {
+  background: #fcac23 url(../images/icons/user-black.png) no-repeat center center;
+  background-size: 25px 25px;
   -webkit-box-shadow: inset 2px 2px 30px 10px #ffb31d;
   -moz-box-shadow: inset 2px 2px 30px 10px #ffb31d;
   -ms-box-shadow: inset 2px 2px 30px 10px #ffb31d;
   -o-box-shadow: inset 2px 2px 30px 10px #ffb31d;
   box-shadow: inset 2px 2px 30px 10px #ffb31d;
 }
-.square-content-container a:nth-child(5n) .page-button:hover, .strip-content-container a:nth-child(5n) .page-button:hover {
+.square-content-container a:nth-child(4n) .page-button:hover {
   background-color: #ffb31d;
 }
+.square-content-container a:nth-child(4n) .page-button:p {
+  text-shadow: black black;
+}
 
-.square-content-container a:nth-child(6n) .page-button, .strip-content-container a:nth-child(6n) .page-button {
-  content: "Joe's Task";
-  background: #ab3e97 url(../images/google-maps.gif) no-repeat center center;
-  background-size: 150px 150px;
+.square-content-container a:nth-child(5n) .page-button {
+  background: #ab3e97 url(../images/icons/info-black.png) no-repeat center center;
+  background-size: 25px 25px;
   -webkit-box-shadow: inset 2px 2px 30px 10px #ab339d;
   -moz-box-shadow: inset 2px 2px 30px 10px #ab339d;
   -ms-box-shadow: inset 2px 2px 30px 10px #ab339d;
   -o-box-shadow: inset 2px 2px 30px 10px #ab339d;
   box-shadow: inset 2px 2px 30px 10px #ab339d;
 }
-.square-content-container a:nth-child(6n) .page-button:hover, .strip-content-container a:nth-child(6n) .page-button:hover {
+.square-content-container a:nth-child(5n) .page-button:hover {
   background-color: #ab339d;
 }
+.square-content-container a:nth-child(5n) .page-button:p {
+  text-shadow: black black;
+}
 
-.square-content-container a:nth-child(7n) .page-button, .strip-content-container a:nth-child(7n) .page-button {
-  content: "Joe's Task";
-  background: #a8cf42 url(../images/Home.gif) no-repeat center center;
-  background-size: 150px 150px;
+.square-content-container a:nth-child(6n) .page-button {
+  background: #a8cf42 url(../images/icons/gear-black.png) no-repeat center center;
+  background-size: 25px 25px;
   -webkit-box-shadow: inset 2px 2px 30px 10px #afd740;
   -moz-box-shadow: inset 2px 2px 30px 10px #afd740;
   -ms-box-shadow: inset 2px 2px 30px 10px #afd740;
   -o-box-shadow: inset 2px 2px 30px 10px #afd740;
   box-shadow: inset 2px 2px 30px 10px #afd740;
 }
-.square-content-container a:nth-child(7n) .page-button:hover, .strip-content-container a:nth-child(7n) .page-button:hover {
+.square-content-container a:nth-child(6n) .page-button:hover {
   background-color: #afd740;
 }
-
-.square-content-container a:nth-child(8n) .page-button, .strip-content-container a:nth-child(8n) .page-button {
-  content: "Joe's Task";
-  background: #205156 url(../images/google-maps.gif) no-repeat center center;
-  background-size: 150px 150px;
-  -webkit-box-shadow: inset 2px 2px 30px 10px #114457;
-  -moz-box-shadow: inset 2px 2px 30px 10px #114457;
-  -ms-box-shadow: inset 2px 2px 30px 10px #114457;
-  -o-box-shadow: inset 2px 2px 30px 10px #114457;
-  box-shadow: inset 2px 2px 30px 10px #114457;
-}
-.square-content-container a:nth-child(8n) .page-button:hover, .strip-content-container a:nth-child(8n) .page-button:hover {
-  background-color: #114457;
-}
-
-.square-content-container a:nth-child(9n) .page-button, .strip-content-container a:nth-child(9n) .page-button {
-  content: "Joe's Task";
-  background: #b2311c url(../images/Home.gif) no-repeat center center;
-  background-size: 150px 150px;
-  -webkit-box-shadow: inset 2px 2px 30px 10px #ae3216;
-  -moz-box-shadow: inset 2px 2px 30px 10px #ae3216;
-  -ms-box-shadow: inset 2px 2px 30px 10px #ae3216;
-  -o-box-shadow: inset 2px 2px 30px 10px #ae3216;
-  box-shadow: inset 2px 2px 30px 10px #ae3216;
-}
-.square-content-container a:nth-child(9n) .page-button:hover, .strip-content-container a:nth-child(9n) .page-button:hover {
-  background-color: #ae3216;
-}
-
-.square-content-container a:nth-child(10n) .page-button, .strip-content-container a:nth-child(10n) .page-button {
-  content: "Joe's Task";
-  background: #dd2392 url(../images/google-maps.gif) no-repeat center center;
-  background-size: 150px 150px;
-  -webkit-box-shadow: inset 2px 2px 30px 10px #db0e87;
-  -moz-box-shadow: inset 2px 2px 30px 10px #db0e87;
-  -ms-box-shadow: inset 2px 2px 30px 10px #db0e87;
-  -o-box-shadow: inset 2px 2px 30px 10px #db0e87;
-  box-shadow: inset 2px 2px 30px 10px #db0e87;
-}
-.square-content-container a:nth-child(10n) .page-button:hover, .strip-content-container a:nth-child(10n) .page-button:hover {
-  background-color: #db0e87;
+.square-content-container a:nth-child(6n) .page-button:p {
+  text-shadow: black black;
 }
 
 .square-content-container a .page-button {
@@ -271,12 +228,12 @@ html body .ui-group-theme-a .ui-bar-inherit {
   color: white;
 }
 
-.ui-btn-icon-left:after,
-.ui-btn-icon-right:after,
-.ui-btn-icon-top:after,
-.ui-btn-icon-bottom:after,
-.ui-btn-icon-notext:after {
+.ui-icon, .ui-icon-searchfield:after {
   background-color: #0e8a98;
+}
+
+.ui-btn-corner-all {
+  border-radius: 0px;
 }
 
 .ui-collapsible-heading,
