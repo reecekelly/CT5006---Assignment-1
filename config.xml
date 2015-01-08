@@ -11,7 +11,7 @@
 		
 		<feature name="http://api.phonegap.com/1.0/device" />
 		
-		<preference name="phonegap-version"           value="3.6.3" />
+		<preference name="phonegap-version" value="3.6.3" />
 		<!--<preference name="permissions" value="none" />-->
 		<preference name="orientation" value="portrait" />
 		<preference name="target-device" value="universal" />
@@ -22,16 +22,11 @@
 		
 		<gap:plugin name="com.phonegap.plugin.statusbar" version="1.0.1" />
 		<!--<preference name="StatusBarBackgroundColor" value="#000000" />-->
-		<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
-		<gap:plugin name="org.apache.cordova.vibration" />
+		<gap:plugin name="org.apache.cordova.inappbrowser" />
+		<gap:plugin name="org.apache.cordova.core.vibration" />
 		<gap:plugin name="org.apache.cordova.device-motion" />
 		
-		<gap:config-file platform="android" parent="/manifest" mode="delete">
-			<uses-permission android:name="android.permission.VIBRATE" />
-		</gap:config-file>
-		
 		<preference name="prerendered-icon"           value="true" /> 
-		<preference name="webviewbounce"              value="false" />
 	
 		<gap:splash src="splash.png" />
 		
