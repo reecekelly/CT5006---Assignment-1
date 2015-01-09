@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 
+<!--Appcache manifest directory located in html tag to enable appcache-->
 <html manifest="AppCache.appcache"> 
+
 	<head> 
 		<title>university of gloucestershire - computer department application</title>
 		<!--Meta Data-->
@@ -13,6 +15,7 @@
 		<meta name="viewport" content="user-scalable=no, width=device-width" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		
+		<!--Adding an Icon-->
 		<link rel="icon" type="image/icon" href="images/glostershire-icon.icon">
 		
 		<!--Css Script Links-->
@@ -30,18 +33,19 @@
 		
 		<script type="text/javascript" src="js/local-storage.js"></script>
 		
+		<!--Sets on load features-->
 		<script type="text/javascript">
 			function onLoad() {
 				document.addEventListener("deviceready", onDeviceReady, false);
 				document.addEventListener("online", onOnline, false);
 				document.addEventListener("offline", onOffline, false);
 			}	
-
+			
+			<!--Vibrate Function-->
 			function vibrate() {
 				navigator.notification.vibrate(1000);
 			}
 		</script>
-
 	</head>
 	
 	<body>
@@ -200,7 +204,7 @@
 			
 			<main data-role="main">
 				<nav class="square-content-container">
-				
+					<!--Requires Phone gap InAppBrowser api to work-->
 					<a href="#" onclick="var ref=window.open('https://plus.google.com/103500992688270718512/posts', '_blank', 'location=yes')" rel="external">
 						<div class="page-button">
 							<p>google+</p>	
@@ -281,7 +285,7 @@
 			
 			<main data-role="main">
 				<nav data-role="collapsibleset" class="strip-content-container">
-					
+					<!--jQuery collapsible div structures-->
 					<div data-role="collapsible" class="page-button" >
 						<h1>CT4001: Information Technology & Data Presentation</h1>	
 						<p>This module introduces the use of software packages in the context of solving 
@@ -727,7 +731,7 @@
 
 		</content>		
 		
-		<!--Vibration Refresher-->
+		<!--Vibration Refresher Requires Phone Gap vibration api-->
 		<script type="text/javascript">	
 			function onDeviceReady() {
 				console.log(navigator.vibrate(1000));
@@ -736,7 +740,8 @@
 	
 		<!--Map Refresher-->
 		<script type="text/javascript"> 		
-		
+			
+			<!--Changes the Map Size to the Current Device-->
 			window.onload = function() {
 				divAdjust("#mapDiv", ".header-filler");
 				navigator.vibrate(1000);

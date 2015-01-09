@@ -5,6 +5,7 @@ $('#note-taking-page').ready(function() {
 	$('#deleteStorage').click(function(e) {
 		localStorage.removeItem(localStorageKey);
 		showStoreValue();
+		navigator.vibrate(1000);
 		e.preventDefault();
     });
 	

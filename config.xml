@@ -15,7 +15,7 @@
 		<preference name="orientation" value="portrait" />
 		<preference name="target-device" value="universal" />
 		<preference name="fullscreen" value="true" />
-		
+		<preference name="SuppressesIncrementalRendering" value="true"/>
 		<preference name="KeepRunning" value="true"/>
 		
 		<preference name="disallowOverscroll" value="true" />

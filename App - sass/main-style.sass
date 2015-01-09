@@ -17,16 +17,14 @@
 	position : fixed
 	+dimensions(100%, $HeaderHeight)
 	+box-shadow-inner($InnerShadowValues, nth($headerbutton, 1))
-	background  : $headercolor url("../images/UogLogo-Dark.gif") no-repeat center center
+	background : $headercolor url("../images/UogLogo-Dark.gif") no-repeat center center
+	background-size : auto $HeaderHeight*0.8
 
 	& .page-title
 		+dimensions(100%, $HeaderHeight)
 		margin : 0 auto
-			
-.ui-page .ui-header .ui-btn
-	width: 50px
-	height: 50px
-			
+
+// Adds colour, images			
 .ui-page .ui-header .ui-btn
 	+dimensions($HeaderHeight*0.8, $HeaderHeight*0.8)
 	+border-radius(0px)
@@ -51,7 +49,7 @@
 //Background colours and images for main page
 @for $i from 1 through length($BackgroundArray)
 	#home-page .square-content-container a:nth-child(#{$i}n) .page-button
-		background  : url(#{nth($HomeImagesArray, $i)}) no-repeat center center
+		background : url(#{nth($HomeImagesArray, $i)}) no-repeat center center
 		background-size : 50px 50px
 		background-color : nth($BackgroundArray, $i)
 		+box-shadow-inner($InnerShadowValues, nth($BackgroundArrayShadow, $i))
@@ -146,10 +144,13 @@ html body .ui-group-theme-a .ui-bar-inherit
 .ui-collapsible-heading > .ui-btn
 	+border-radius(0px)
 
-// remove margin to collection of expanderable tabs	
+// Remove margin to collection of expanderable tabs	
 .ui-collapsible-inset,
 .ui-collapsible-set
 	margin : 0 auto
+	
+.ui-collapsible-content
+	background : #ffffff
 	
 //Notetaking			----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----	
 #message
@@ -168,7 +169,16 @@ html body .ui-group-theme-a .ui-bar-inherit
 
 .ui-content .ui-listview-inset, .ui-panel-inner > .ui-listview-inset
 	margin : 20px auto
-	
+
+// note taking coloured bars	
 .ui-bar-b
 	border : 0px
 	background : nth($headerbutton, 2)
+	
+// Changes the notetaking text size	
+.ui-li-divider
+	font-size : 25px
+	text-align : center
+	
+@media only screen and (min-device-width : $tablets) and (max-device-width : $destops)
+	@import mobile-media

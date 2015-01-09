@@ -1,15 +1,17 @@
-@import prod-sass
+@import prod
 
-$mobile-home-image : 300px 300px
+$HeaderHeight : 80px
+$tabletmultiplier : 0.9
 
-body
-	width: 100%	
-		
-header, footer
-	display: none
+.ui-page .ui-header, .header-filler
+	height : $HeaderHeight
+	background-size : auto $HeaderHeight*0.8
 
-#content-container-home
-	display: initial
+.ui-page .ui-header .ui-btn
+	+dimensions($HeaderHeight*$tabletmultiplier, $HeaderHeight*$tabletmultiplier)
 	
-.square-content-container a .page-button p
-	font-size : 45px
+	&:first-child
+		background-size : $HeaderHeight*$tabletmultiplier $HeaderHeight*$tabletmultiplier
+		
+	&:last-child
+		background-size : $HeaderHeight*$tabletmultiplier $HeaderHeight*$tabletmultiplier

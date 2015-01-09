@@ -1,3 +1,4 @@
+/* Media queries dimension */
 * {
   padding: 0;
   margin: 0 auto;
@@ -21,16 +22,12 @@
   -o-box-shadow: inset 0px 0px 10px 1px #0e8a98;
   box-shadow: inset 0px 0px 10px 1px #0e8a98;
   background: #00acbd url("../images/UogLogo-Dark.gif") no-repeat center center;
+  background-size: auto 40px;
 }
 .ui-page .ui-header .page-title {
   width: 100%;
   height: 50px;
   margin: 0 auto;
-}
-
-.ui-page .ui-header .ui-btn {
-  width: 50px;
-  height: 50px;
 }
 
 .ui-page .ui-header .ui-btn {
@@ -294,6 +291,10 @@ html body .ui-group-theme-a .ui-bar-inherit {
   margin: 0 auto;
 }
 
+.ui-collapsible-content {
+  background: white;
+}
+
 #message {
   display: none;
   border-radius: 10px;
@@ -318,4 +319,27 @@ html body .ui-group-theme-a .ui-bar-inherit {
 .ui-bar-b {
   border: 0px;
   background: #e65a52;
+}
+
+.ui-li-divider {
+  font-size: 25px;
+  text-align: center;
+}
+
+@media only screen and (min-device-width: 500px) and (max-device-width: 1700px) {
+  .ui-page .ui-header, .header-filler {
+    height: 80px;
+    background-size: auto 64px;
+  }
+
+  .ui-page .ui-header .ui-btn {
+    width: 72px;
+    height: 72px;
+  }
+  .ui-page .ui-header .ui-btn:first-child {
+    background-size: 72px 72px;
+  }
+  .ui-page .ui-header .ui-btn:last-child {
+    background-size: 72px 72px;
+  }
 }
