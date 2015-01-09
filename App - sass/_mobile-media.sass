@@ -2,6 +2,7 @@
 
 $HeaderHeight : 80px
 $tabletmultiplier : 0.9
+$strip-height : 100px
 
 .ui-page .ui-header, .header-filler
 	height : $HeaderHeight
@@ -15,3 +16,15 @@ $tabletmultiplier : 0.9
 		
 	&:last-child
 		background-size : $HeaderHeight*$tabletmultiplier $HeaderHeight*$tabletmultiplier
+		
+.strip-content-container a .page-button
+	height : $strip-height
+
+	& p
+		line-height : $strip-height
+		
+.square-content-container a .page-button p
+	font-size : 40px
+	
+#soc-media-page .square-content-container a .page-button
+	background-size : 150px 150px

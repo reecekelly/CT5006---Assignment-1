@@ -342,4 +342,19 @@ html body .ui-group-theme-a .ui-bar-inherit {
   .ui-page .ui-header .ui-btn:last-child {
     background-size: 72px 72px;
   }
+
+  .strip-content-container a .page-button {
+    height: 100px;
+  }
+  .strip-content-container a .page-button p {
+    line-height: 100px;
+  }
+
+  .square-content-container a .page-button p {
+    font-size: 40px;
+  }
+
+  #soc-media-page .square-content-container a .page-button {
+    background-size: 150px 150px;
+  }
 }
