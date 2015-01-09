@@ -2,7 +2,7 @@
 
 <html manifest="AppCache.appcache"> 
 	<head> 
-		<title>university of gloucestershire - it department application</title>
+		<title>university of gloucestershire - computer department application</title>
 		<!--Meta Data-->
 		<meta name="author" content="reece kelly">
 		<meta charset="utf-8">
@@ -49,9 +49,9 @@
 		<content data-role="page" id="home-page">
 			
 			<header data-role="header"> 
-				<a data-rel="back"></a>
+
 				<div class="page-title"></div>
-				<a href="#home-page"></a>
+
 			</header>
 				
 			<div class="header-filler"></div>
@@ -120,7 +120,7 @@
 				<nav class="strip-content-container">
 					<a href="#courses-level-4">
 						<div class="page-button">
-							<p>level 4</p>	
+							<p>level 4</p>
 						</div>
 					</a>
 					
@@ -138,8 +138,7 @@
 	
 				</nav>
 			</main>
-		
-			<footer data-role="footer"> </footer>
+	
 		</content>				
 		
 		<!--Map Page-->
@@ -202,21 +201,21 @@
 			<main data-role="main">
 				<nav class="square-content-container">
 				
-					<a href="#" onclick="var ref=window.open('https://www.facebook.com/uniofglos', '_blank', 'location=yes')" rel="external">
-						<div class="page-button">
-							<p>facebook</p>	
-						</div>
-					</a>
-					
 					<a href="#" onclick="var ref=window.open('https://plus.google.com/103500992688270718512/posts', '_blank', 'location=yes')" rel="external">
 						<div class="page-button">
 							<p>google+</p>	
 						</div>
-					</a>
-					
+					</a>	
+
 					<a href="#" onclick="var ref=window.open('https://twitter.com/uniofglos/', '_blank', 'location=yes')" rel="external">
 						<div class="page-button">
 							<p>twitter</p>	
+						</div>
+					</a>					
+				
+					<a href="#" onclick="var ref=window.open('https://www.facebook.com/uniofglos', '_blank', 'location=yes')" rel="external">
+						<div class="page-button">
+							<p>facebook</p>	
 						</div>
 					</a>
 					
@@ -224,7 +223,19 @@
 						<div class="page-button">
 							<p>youtube</p>	
 						</div>
-					</a>	
+					</a>
+
+					<a href="#" onclick="var ref=window.open('http://www.glos.ac.uk/Pages/default.aspx', '_blank', 'location=yes')" rel="external">
+						<div class="page-button">
+							<p>main site</p>	
+						</div>
+					</a>
+
+					<a href="#" onclick="var ref=window.open('https://infonet.glos.ac.uk/', '_blank', 'location=yes')" rel="external">
+						<div class="page-button">
+							<p>infonet</p>	
+						</div>
+					</a>					
 					
 				</nav>
 			</main>
@@ -243,17 +254,7 @@
 			<div class="header-filler"></div>
 			
 			<main data-role="main">
-				<form data-ajax="false" data-role="fieldcontian" method ="post">
-					<input name="name" type="name" placeholder="What's Your Name" required />			
-					<input name="email" type="email" placeholder="Hows About Your Email" required />
-						
-					<textarea name="message" placeholder="What Would you Like To Know" required></textarea>
-
-					<input name="usrtel" type="tel" placeholder="If You Have A Phone Number Aswell">
-					<input name="homepage" type="url" placeholder="Also A Direct Link To Your Website Would Be Nice">
-
-					<input name="submit" type="submit" value="Submit">
-				</form>				
+			
 			</main>
 			
 		</content>
@@ -749,4 +750,5 @@
 		</script>
 
 	</body>
+
 </html>

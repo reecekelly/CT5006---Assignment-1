@@ -13,6 +13,9 @@
 .ui-body
 	+expanding-style(100%, 50px)
 	background-color : nth($BackgroundArray, 4)
+	
+.ui-body-c, .ui-overlay-c
+	text-shadow : 0px
 
 //Header css		----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
 .ui-page .ui-header
@@ -50,29 +53,53 @@
 .ui-page .ui-main
 	border-top : 0px
 
+//Background colours and images for main page
 @for $i from 1 through length($BackgroundArray)
-	.square-content-container a:nth-child(#{$i}n) .page-button
-		background  : nth($BackgroundArray, $i) url(#{nth($HomeImagesArray, $i)}) no-repeat center center
-		background-size : 25px 25px
+	#home-page .square-content-container a:nth-child(#{$i}n) .page-button
+		background  : url(#{nth($HomeImagesArray, $i)}) no-repeat center center
+		background-size : 50px 50px
+		background-color : nth($BackgroundArray, $i)
 		+box-shadow-inner($InnerShadowValues, nth($BackgroundArrayShadow, $i))
 
 		&:hover
 			background-color : nth($BackgroundArrayShadow, $i)
-			
-		&:p
-			text-shadow: #000 rgba(#000, 1)
 
+//Background colours and images for media page			
+@for $i from 1 through length($SocialMediaColor)
+	#soc-media-page .square-content-container a:nth-child(#{$i}n) .page-button
+		background  : nth($SocialMediaColor, $i) url(#{nth($SocialMediaIcon, $i)}) no-repeat center center
+		background-size : 50px 50px
+		background-color : nth($BackgroundArray, $i)
+
+#courses-page .strip-content-container a
+	text-decoration : none
+	
+	& .page-button p
+		color : #ffffff
+		text-color : #000000
+	
+	@for $i from 1 through length($CourseBackground)
+		&:nth-child(#{$i}n) .page-button
+			background : nth($CourseBackground, $i) url("../images/icons/carat-r-black.png") no-repeat right center
+			background-size : 25px 25px
+
+//Main button css
 .square-content-container a .page-button
 	float : left
 	width : 50%
 	height : 0
 	padding-bottom : 50%
 
-	& p
+	& p, #courses-page .strip-content-container a .page-button p
+		margin-top : 20px
 		text-transform : capitalize
 		font-size : 25px
 		text-align : center
-		color : #ffffff
+		color : #ffffff		
+			
+#courses-page .strip-content-container a .page-button p
+	margin-left : 20px
+		
 			
 .strip-content-container a .page-button
 	margin : 0 auto
@@ -127,10 +154,6 @@ html body .ui-group-theme-a .ui-bar-inherit
 .ui-collapsible-inset,
 .ui-collapsible-set
 	margin : 0 auto
-
-// removes the displayed scrollbar	
-::-webkit-scrollbar, 
-	display : none
 	
 //Notetaking			----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----	
 #message
@@ -148,13 +171,8 @@ html body .ui-group-theme-a .ui-bar-inherit
 	margin : 0 auto
 
 .ui-content .ui-listview-inset, .ui-panel-inner > .ui-listview-inset
-	margin : 0 auto
+	margin : 20px auto
 	
-//Footer			----- ----- ----- ----- ----- ----- ----- ----- ----- ----- -----
-.ui-page .ui-footer
-	position : fixed
-	+dimensions(100%, $HeaderHeight)
-	background-color : nth($headerbutton, 2)
-	
-//@media only screen and (min-device-width : 320px) and (max-device-width : 480px)
-	//@import mobile-media
+.ui-bar-b
+	border : 0px
+	background : nth($headerbutton, 2)

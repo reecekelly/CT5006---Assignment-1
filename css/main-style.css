@@ -17,15 +17,19 @@
   background-color: #fcac23;
 }
 
+.ui-body-c, .ui-overlay-c {
+  text-shadow: 0px;
+}
+
 .ui-page .ui-header {
   position: fixed;
   width: 100%;
   height: 50px;
-  -webkit-box-shadow: inset 2px 2px 30px 10px #0e8a98;
-  -moz-box-shadow: inset 2px 2px 30px 10px #0e8a98;
-  -ms-box-shadow: inset 2px 2px 30px 10px #0e8a98;
-  -o-box-shadow: inset 2px 2px 30px 10px #0e8a98;
-  box-shadow: inset 2px 2px 30px 10px #0e8a98;
+  -webkit-box-shadow: inset 0px 0px 10px 1px #0e8a98;
+  -moz-box-shadow: inset 0px 0px 10px 1px #0e8a98;
+  -ms-box-shadow: inset 0px 0px 10px 1px #0e8a98;
+  -o-box-shadow: inset 0px 0px 10px 1px #0e8a98;
+  box-shadow: inset 0px 0px 10px 1px #0e8a98;
   background: #00acbd url("../images/UogLogo-Dark.gif") no-repeat center center;
 }
 .ui-page .ui-header .page-title {
@@ -68,100 +72,144 @@
   border-top: 0px;
 }
 
-.square-content-container a:nth-child(1n) .page-button {
-  background: #f68c28 url(../images/icons/bullets-black.png) no-repeat center center;
-  background-size: 25px 25px;
-  -webkit-box-shadow: inset 2px 2px 30px 10px #f48229;
-  -moz-box-shadow: inset 2px 2px 30px 10px #f48229;
-  -ms-box-shadow: inset 2px 2px 30px 10px #f48229;
-  -o-box-shadow: inset 2px 2px 30px 10px #f48229;
-  box-shadow: inset 2px 2px 30px 10px #f48229;
+#home-page .square-content-container a:nth-child(1n) .page-button {
+  background: url(../images/icons/bullets-black.png) no-repeat center center;
+  background-size: 50px 50px;
+  background-color: #f68c28;
+  -webkit-box-shadow: inset 0px 0px 10px 1px #f48229;
+  -moz-box-shadow: inset 0px 0px 10px 1px #f48229;
+  -ms-box-shadow: inset 0px 0px 10px 1px #f48229;
+  -o-box-shadow: inset 0px 0px 10px 1px #f48229;
+  box-shadow: inset 0px 0px 10px 1px #f48229;
 }
-.square-content-container a:nth-child(1n) .page-button:hover {
+#home-page .square-content-container a:nth-child(1n) .page-button:hover {
   background-color: #f48229;
 }
-.square-content-container a:nth-child(1n) .page-button:p {
-  text-shadow: black black;
-}
 
-.square-content-container a:nth-child(2n) .page-button {
-  background: #ef3a25 url(../images/icons/location-black.png) no-repeat center center;
-  background-size: 25px 25px;
-  -webkit-box-shadow: inset 2px 2px 30px 10px #ff2e15;
-  -moz-box-shadow: inset 2px 2px 30px 10px #ff2e15;
-  -ms-box-shadow: inset 2px 2px 30px 10px #ff2e15;
-  -o-box-shadow: inset 2px 2px 30px 10px #ff2e15;
-  box-shadow: inset 2px 2px 30px 10px #ff2e15;
+#home-page .square-content-container a:nth-child(2n) .page-button {
+  background: url(../images/icons/location-black.png) no-repeat center center;
+  background-size: 50px 50px;
+  background-color: #ef3a25;
+  -webkit-box-shadow: inset 0px 0px 10px 1px #ff2e15;
+  -moz-box-shadow: inset 0px 0px 10px 1px #ff2e15;
+  -ms-box-shadow: inset 0px 0px 10px 1px #ff2e15;
+  -o-box-shadow: inset 0px 0px 10px 1px #ff2e15;
+  box-shadow: inset 0px 0px 10px 1px #ff2e15;
 }
-.square-content-container a:nth-child(2n) .page-button:hover {
+#home-page .square-content-container a:nth-child(2n) .page-button:hover {
   background-color: #ff2e15;
 }
-.square-content-container a:nth-child(2n) .page-button:p {
-  text-shadow: black black;
-}
 
-.square-content-container a:nth-child(3n) .page-button {
-  background: #00abbd url(../images/icons/edit-black.png) no-repeat center center;
-  background-size: 25px 25px;
-  -webkit-box-shadow: inset 2px 2px 30px 10px #03a4b6;
-  -moz-box-shadow: inset 2px 2px 30px 10px #03a4b6;
-  -ms-box-shadow: inset 2px 2px 30px 10px #03a4b6;
-  -o-box-shadow: inset 2px 2px 30px 10px #03a4b6;
-  box-shadow: inset 2px 2px 30px 10px #03a4b6;
+#home-page .square-content-container a:nth-child(3n) .page-button {
+  background: url(../images/icons/edit-black.png) no-repeat center center;
+  background-size: 50px 50px;
+  background-color: #00abbd;
+  -webkit-box-shadow: inset 0px 0px 10px 1px #03a4b6;
+  -moz-box-shadow: inset 0px 0px 10px 1px #03a4b6;
+  -ms-box-shadow: inset 0px 0px 10px 1px #03a4b6;
+  -o-box-shadow: inset 0px 0px 10px 1px #03a4b6;
+  box-shadow: inset 0px 0px 10px 1px #03a4b6;
 }
-.square-content-container a:nth-child(3n) .page-button:hover {
+#home-page .square-content-container a:nth-child(3n) .page-button:hover {
   background-color: #03a4b6;
 }
-.square-content-container a:nth-child(3n) .page-button:p {
-  text-shadow: black black;
-}
 
-.square-content-container a:nth-child(4n) .page-button {
-  background: #fcac23 url(../images/icons/user-black.png) no-repeat center center;
-  background-size: 25px 25px;
-  -webkit-box-shadow: inset 2px 2px 30px 10px #ffb31d;
-  -moz-box-shadow: inset 2px 2px 30px 10px #ffb31d;
-  -ms-box-shadow: inset 2px 2px 30px 10px #ffb31d;
-  -o-box-shadow: inset 2px 2px 30px 10px #ffb31d;
-  box-shadow: inset 2px 2px 30px 10px #ffb31d;
+#home-page .square-content-container a:nth-child(4n) .page-button {
+  background: url(../images/icons/user-black.png) no-repeat center center;
+  background-size: 50px 50px;
+  background-color: #fcac23;
+  -webkit-box-shadow: inset 0px 0px 10px 1px #ffb31d;
+  -moz-box-shadow: inset 0px 0px 10px 1px #ffb31d;
+  -ms-box-shadow: inset 0px 0px 10px 1px #ffb31d;
+  -o-box-shadow: inset 0px 0px 10px 1px #ffb31d;
+  box-shadow: inset 0px 0px 10px 1px #ffb31d;
 }
-.square-content-container a:nth-child(4n) .page-button:hover {
+#home-page .square-content-container a:nth-child(4n) .page-button:hover {
   background-color: #ffb31d;
 }
-.square-content-container a:nth-child(4n) .page-button:p {
-  text-shadow: black black;
-}
 
-.square-content-container a:nth-child(5n) .page-button {
-  background: #ab3e97 url(../images/icons/info-black.png) no-repeat center center;
-  background-size: 25px 25px;
-  -webkit-box-shadow: inset 2px 2px 30px 10px #ab339d;
-  -moz-box-shadow: inset 2px 2px 30px 10px #ab339d;
-  -ms-box-shadow: inset 2px 2px 30px 10px #ab339d;
-  -o-box-shadow: inset 2px 2px 30px 10px #ab339d;
-  box-shadow: inset 2px 2px 30px 10px #ab339d;
+#home-page .square-content-container a:nth-child(5n) .page-button {
+  background: url(../images/icons/info-black.png) no-repeat center center;
+  background-size: 50px 50px;
+  background-color: #ab3e97;
+  -webkit-box-shadow: inset 0px 0px 10px 1px #ab339d;
+  -moz-box-shadow: inset 0px 0px 10px 1px #ab339d;
+  -ms-box-shadow: inset 0px 0px 10px 1px #ab339d;
+  -o-box-shadow: inset 0px 0px 10px 1px #ab339d;
+  box-shadow: inset 0px 0px 10px 1px #ab339d;
 }
-.square-content-container a:nth-child(5n) .page-button:hover {
+#home-page .square-content-container a:nth-child(5n) .page-button:hover {
   background-color: #ab339d;
 }
-.square-content-container a:nth-child(5n) .page-button:p {
-  text-shadow: black black;
-}
 
-.square-content-container a:nth-child(6n) .page-button {
-  background: #a8cf42 url(../images/icons/gear-black.png) no-repeat center center;
-  background-size: 25px 25px;
-  -webkit-box-shadow: inset 2px 2px 30px 10px #afd740;
-  -moz-box-shadow: inset 2px 2px 30px 10px #afd740;
-  -ms-box-shadow: inset 2px 2px 30px 10px #afd740;
-  -o-box-shadow: inset 2px 2px 30px 10px #afd740;
-  box-shadow: inset 2px 2px 30px 10px #afd740;
+#home-page .square-content-container a:nth-child(6n) .page-button {
+  background: url(../images/icons/gear-black.png) no-repeat center center;
+  background-size: 50px 50px;
+  background-color: #a8cf42;
+  -webkit-box-shadow: inset 0px 0px 10px 1px #afd740;
+  -moz-box-shadow: inset 0px 0px 10px 1px #afd740;
+  -ms-box-shadow: inset 0px 0px 10px 1px #afd740;
+  -o-box-shadow: inset 0px 0px 10px 1px #afd740;
+  box-shadow: inset 0px 0px 10px 1px #afd740;
 }
-.square-content-container a:nth-child(6n) .page-button:hover {
+#home-page .square-content-container a:nth-child(6n) .page-button:hover {
   background-color: #afd740;
 }
-.square-content-container a:nth-child(6n) .page-button:p {
-  text-shadow: black black;
+
+#soc-media-page .square-content-container a:nth-child(1n) .page-button {
+  background: #df2826 url(../images/icons/google+.png) no-repeat center center;
+  background-size: 50px 50px;
+  background-color: #f68c28;
+}
+
+#soc-media-page .square-content-container a:nth-child(2n) .page-button {
+  background: #5ea9dd url(../images/icons/twitter.png) no-repeat center center;
+  background-size: 50px 50px;
+  background-color: #ef3a25;
+}
+
+#soc-media-page .square-content-container a:nth-child(3n) .page-button {
+  background: #3a5795 url(../images/icons/facebook.png) no-repeat center center;
+  background-size: 50px 50px;
+  background-color: #00abbd;
+}
+
+#soc-media-page .square-content-container a:nth-child(4n) .page-button {
+  background: #dd4b39 url(../images/icons/youtube.png) no-repeat center center;
+  background-size: 50px 50px;
+  background-color: #fcac23;
+}
+
+#soc-media-page .square-content-container a:nth-child(5n) .page-button {
+  background: #ab339d url(../images/icons/comment-black.png) no-repeat center center;
+  background-size: 50px 50px;
+  background-color: #ab3e97;
+}
+
+#soc-media-page .square-content-container a:nth-child(6n) .page-button {
+  background: #afd740 url(../images/icons/action-black.png) no-repeat center center;
+  background-size: 50px 50px;
+  background-color: #a8cf42;
+}
+
+#courses-page .strip-content-container a {
+  text-decoration: none;
+}
+#courses-page .strip-content-container a .page-button p {
+  color: white;
+  text-color: black;
+}
+#courses-page .strip-content-container a:nth-child(1n) .page-button {
+  background: #ef3a25 url("../images/icons/carat-r-black.png") no-repeat right center;
+  background-size: 25px 25px;
+}
+#courses-page .strip-content-container a:nth-child(2n) .page-button {
+  background: #fcac23 url("../images/icons/carat-r-black.png") no-repeat right center;
+  background-size: 25px 25px;
+}
+#courses-page .strip-content-container a:nth-child(3n) .page-button {
+  background: #a8cf42 url("../images/icons/carat-r-black.png") no-repeat right center;
+  background-size: 25px 25px;
 }
 
 .square-content-container a .page-button {
@@ -170,11 +218,16 @@
   height: 0;
   padding-bottom: 50%;
 }
-.square-content-container a .page-button p {
+.square-content-container a .page-button p, .square-content-container a .page-button #courses-page .strip-content-container a .page-button p {
+  margin-top: 20px;
   text-transform: capitalize;
   font-size: 25px;
   text-align: center;
   color: white;
+}
+
+#courses-page .strip-content-container a .page-button p {
+  margin-left: 20px;
 }
 
 .strip-content-container a .page-button {
@@ -250,10 +303,6 @@ html body .ui-group-theme-a .ui-bar-inherit {
   margin: 0 auto;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 #message {
   display: none;
   border-radius: 10px;
@@ -272,12 +321,10 @@ html body .ui-group-theme-a .ui-bar-inherit {
 }
 
 .ui-content .ui-listview-inset, .ui-panel-inner > .ui-listview-inset {
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
-.ui-page .ui-footer {
-  position: fixed;
-  width: 100%;
-  height: 50px;
-  background-color: #e65a52;
+.ui-bar-b {
+  border: 0px;
+  background: #e65a52;
 }
