@@ -1,14 +1,6 @@
-var localStorageKey = "demoStorageKey";
+var localStorageKey = "Note Storage";
 
 $('#note-taking-page').ready(function() {
-	if (Modernizr.localstorage) {
-		showStoreValue();
-	} else {
-		$('#message').text("Unfortunately your browser doesn't support local storage");
-		$('#deleteStorage').attr('disabled', 'disabled');
-		$('#addToStorage').attr('disabled', 'disabled');
-		$('#message').show();
-	}
     
 	$('#deleteStorage').click(function(e) {
 		localStorage.removeItem(localStorageKey);
