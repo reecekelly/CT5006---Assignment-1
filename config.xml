@@ -21,10 +21,8 @@
 		<preference name="disallowOverscroll" value="true" />
 		<preference name="DisallowOverscroll" value="true" />
 		
-		<preference name="BackgroundColor" value="0xff192945"/>
-		
 		<gap:plugin name="com.phonegap.plugin.statusbar" version="1.0.1" />
-		<!--<preference name="StatusBarBackgroundColor" value="#000000" />-->
+
 		<gap:plugin name="org.apache.cordova.inappbrowser" />
 		<gap:plugin name="org.apache.cordova.core.vibration" />
 		

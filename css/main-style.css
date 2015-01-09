@@ -7,6 +7,10 @@
   text-shadow: 0px;
 }
 
+.ui-page {
+  background: #192945;
+}
+
 .ui-page .ui-header {
   position: fixed;
   width: 100%;
