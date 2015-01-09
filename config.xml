@@ -11,15 +11,11 @@
 		
 		<feature name="http://api.phonegap.com/1.0/device" />
 		
-		<gap:platform name="ios" />
-		<gap:platform name="android" />
-		<gap:platform name="winphone" />
-		
 		<preference name="phonegap-version" value="3.6.3" />
 		<!--<preference name="permissions" value="none" />-->
 		<preference name="orientation" value="portrait" />
 		<preference name="target-device" value="universal" />
-		<preference name="fullscreen" value="false" />
+		<preference name="fullscreen" value="true" />
 		<preference name="SplashScreenDelay" value="7000"/>
 		
 		<preference name="KeepRunning" value="true"/>
@@ -33,7 +29,7 @@
 		<gap:plugin name="org.apache.cordova.core.vibration" />
 		<!--<gap:plugin name="org.apache.cordova.device-motion" />-->
 		
-		<preference name="prerendered-icon" value="true" /> 
+		<preference name="prerendered-icon"           value="true" /> 
 	
 		<gap:splash src="splash.png" />
 		
