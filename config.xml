@@ -15,12 +15,13 @@
 		<preference name="orientation" value="portrait" />
 		<preference name="target-device" value="universal" />
 		<preference name="fullscreen" value="true" />
-		<preference name="SplashScreenDelay" value="7000"/>
 		
 		<preference name="KeepRunning" value="true"/>
 		
 		<preference name="disallowOverscroll" value="true" />
 		<preference name="DisallowOverscroll" value="true" />
+		
+		<preference name="BackgroundColor" value="0xff192945"/>
 		
 		<gap:plugin name="com.phonegap.plugin.statusbar" version="1.0.1" />
 		<!--<preference name="StatusBarBackgroundColor" value="#000000" />-->
@@ -30,6 +31,7 @@
 		<preference name="prerendered-icon" value="true" /> 
 	
 		<gap:splash src="splash.png" />
+		<preference name="SplashScreenDelay" value="10000"/>
 		
 		<icon src="images/glostershire-intro.png" />
 		
