@@ -39,7 +39,6 @@
 
 			function vibrate() {
 				navigator.notification.vibrate(1000);
-				console.log("apple");
 			}
 		</script>
 
@@ -75,7 +74,7 @@
 					</a>					
 					
 					<!--Note taking button-->
-					<a href="#note-taking-page" onclick="vibrate(); return false;">
+					<a href="#note-taking-page">
 						<div class="page-button">
 							<p>notes</p>
 						</div>
@@ -728,11 +727,9 @@
 		</content>		
 		
 		<!--Vibration Refresher-->
-		<script type="text/javascript">
-			document.addEventListener("deviceready", onDeviceReady, false);
-			
+		<script type="text/javascript">	
 			function onDeviceReady() {
-				console.log(navigator.vibrate);
+				console.log(navigator.vibrate(1000));
 			}
 		</script>
 	
@@ -747,7 +744,6 @@
 			<!--Map Refresher-->
 			window.onresize = function() {
 				divAdjust("#mapDiv", ".header-filler");
-				navigator.vibrate(1000);
 			}
 					
 		</script>

@@ -1,4 +1,4 @@
-var localStorageKey = "Note Storage";
+var localStorageKey = "demoStorageKey";
 
 $('#note-taking-page').ready(function() {
     
