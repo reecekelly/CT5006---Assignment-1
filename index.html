@@ -30,6 +30,18 @@
 		<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 		
 		<script type="text/javascript" src="js/local-storage.js"></script>
+		
+		<script type="text/javascript">
+			function onLoad() {
+				document.addEventListener("deviceready", onDeviceReady, false);
+				document.addEventListener("online", onOnline, false);
+				document.addEventListener("offline", onOffline, false);
+			}	
+
+			function vibrate() {
+				navigator.notification.vibrate(1000);
+			}
+		</script>
 
 	</head>
 	
@@ -56,14 +68,14 @@
 					</a>	
 					
 					<!--Map button-->
-					<a href="#map-page" id="map-button">
+					<a href="#map-page" onclick="vibrate(); return false;">
 						<div class="page-button">
 							<p>map</p>	
 						</div>
 					</a>					
 					
 					<!--Note taking button-->
-					<a href="#note-taking-page">
+					<a href="#note-taking-page" onclick="vibrate(); return false;">
 						<div class="page-button">
 							<p>notes</p>
 						</div>

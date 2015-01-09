@@ -1,4 +1,5 @@
 if(navigator.geolocation) {
+	function
 	var point;
 	function divAdjust(target, excess) {
 		var newmapheight = screen.height - $(excess).height();
@@ -6,20 +7,16 @@ if(navigator.geolocation) {
 	}
 	
 	function hasPosition(position) {
-		point = new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+		var point = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 						
-		myOptions = {zoom: 15,center: point,mapTypeId: google.maps.MapTypeId.ROADMAP}, 
-		var travel = {origin: point, destination: "Park Campus, Cheltenham", travelMode : google.maps.DirectionsTravelMode.WALKING},
+		var myOptions = {zoom: 15,center: point,mapTypeId: google.maps.MapTypeId.ROADMAP}; 
+		var travel = {origin: point, destination: "Park Campus, Cheltenham", travelMode : google.maps.DirectionsTravelMode.WALKING};
 
-		mapDiv = document.getElementById("mapDiv"),
+		mapDiv = document.getElementById("mapDiv");
 					
-		map = new google.maps.Map(mapDiv, myOptions),
-			marker = new google.maps.Marker({
-				position: point,
-				map: map,
-				title: "You are here"
-			});
-		}
+		map = new google.maps.Map(mapDiv, myOptions); 
+		marker = new google.maps.Marker({position: point, map: map, title: "You are here" });
+	}
 		
 	navigator.geolocation.getCurrentPosition(hasPosition);
 	google.maps.event.addDomListener(window, 'load', initialize);
