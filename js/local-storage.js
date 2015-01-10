@@ -1,7 +1,10 @@
+// Sets a local storage area with a name.
 var localStorageKey = "demoStorageKey";
 
 $('#note-taking-page').ready(function() {
-    
+    /*
+	*  Removes all values from the assigned local storage
+	*/
 	$('#deleteStorage').click(function(e) {
 		localStorage.removeItem(localStorageKey);
 		showStoreValue();
@@ -9,6 +12,9 @@ $('#note-taking-page').ready(function() {
 		e.preventDefault();
     });
 	
+	/*
+	* Adds current value in the input field to local storage
+	*/
 	$('#addToStorage').click(function(e) {
 		localStorage.setItem(localStorageKey, $('#entry').val());
 		showStoreValue();
@@ -16,6 +22,9 @@ $('#note-taking-page').ready(function() {
 	});
 });
 
+/*
+* Displays all values within local storage. 
+*/
 function showStoreValue() {
 	var item = localStorage.getItem(localStorageKey);
 	
