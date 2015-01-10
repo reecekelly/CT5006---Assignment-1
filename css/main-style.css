@@ -146,37 +146,31 @@
 #soc-media-page .square-content-container a:nth-child(1n) .page-button {
   background: #df2826 url(../images/icons/google+.png) no-repeat center center;
   background-size: 50px 50px;
-  background-color: #f68c28;
 }
 
 #soc-media-page .square-content-container a:nth-child(2n) .page-button {
   background: #5ea9dd url(../images/icons/twitter.png) no-repeat center center;
   background-size: 50px 50px;
-  background-color: #ef3a25;
 }
 
 #soc-media-page .square-content-container a:nth-child(3n) .page-button {
   background: #3a5795 url(../images/icons/facebook.png) no-repeat center center;
   background-size: 50px 50px;
-  background-color: #00abbd;
 }
 
 #soc-media-page .square-content-container a:nth-child(4n) .page-button {
   background: #dd4b39 url(../images/icons/youtube.png) no-repeat center center;
   background-size: 50px 50px;
-  background-color: #fcac23;
 }
 
 #soc-media-page .square-content-container a:nth-child(5n) .page-button {
   background: #ab339d url(../images/icons/comment-black.png) no-repeat center center;
   background-size: 50px 50px;
-  background-color: #ab3e97;
 }
 
 #soc-media-page .square-content-container a:nth-child(6n) .page-button {
   background: #afd740 url(../images/icons/action-black.png) no-repeat center center;
   background-size: 50px 50px;
-  background-color: #a8cf42;
 }
 
 #courses-page .strip-content-container a {
